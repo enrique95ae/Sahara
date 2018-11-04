@@ -10,7 +10,7 @@
         <!-- Grid with height = 20 emty px to avoid the time and battery logos -->
         <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10*" /> 
+                <ColumnDefinition Width="auto" /> 
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="20" />  
@@ -73,6 +73,7 @@
         
         <Label Text="Nearby deals:" />
         
+        <!-- Grid with the 3 nearby item pictures (buttons) -->
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120" />
