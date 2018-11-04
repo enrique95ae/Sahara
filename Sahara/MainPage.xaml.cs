@@ -12,6 +12,23 @@ namespace Sahara
         public MainPage()
         {
             InitializeComponent();
+
         }
+
+        private void notificationsButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void profileButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
