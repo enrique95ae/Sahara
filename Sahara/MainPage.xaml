@@ -7,6 +7,23 @@
     <StackLayout>
         <!-- Place new controls here -->
         
+        <!-- Grid with height = 20 emty px to avoid the time and battery logos -->
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" /> 
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />  
+            </Grid.RowDefinitions>
+            
+            <BoxView 
+                Grid.Row="0"
+                Grid.Column="0"
+            />
+            
+        </Grid>
+        
+         <!-- Grid with search bar, notifications, settings and profile -->
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="0.1">
             
             <Grid.ColumnDefinitions>
@@ -16,9 +33,8 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="4*" />
+            <Grid.RowDefinitions> 
+                <RowDefinition Height="40" />
             </Grid.RowDefinitions>
             
             <Entry
@@ -27,6 +43,7 @@
                 FontSize="Default"
                 Grid.Row="0"
                 Grid.Column="0"
+                IsTextPredictionEnabled="true"
             />
             
             <Button 
@@ -51,16 +68,54 @@
                 Grid.Row="0"
                 Grid.Column="3"
                 Clicked="profileButton_Clicked"    
-            />
-            
-            <Image
-                x:Name="item1"
-                Source="" 
-                Clicked="item1_Clicked"
-            />
-            
+             />   
         </Grid>
         
+        <Label Text="Nearby deals:" />
+        
+        <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="120" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions> 
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            
+            <Button
+                x:Name="item1Button"
+                Text="ITEM1"
+                Clicked="item1Button_Clicked"
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="Purple"
+                TextColor="White"
+             />  
+            
+            <Button
+                x:Name="item2Button"
+                Text="ITEM2"
+                Clicked="item2Button_Clicked"
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="Purple"
+                TextColor="White"
+             />  
+            
+            <Button
+                x:Name="item3Button"
+                Text="ITEM3"
+                Clicked="item3Button_Clicked"
+                Grid.Row="0"
+                Grid.Column="2"
+                BackgroundColor="Purple"
+                TextColor="White"  
+             />
+            
+        </Grid>
+       
     </StackLayout>
     
 </ContentPage>
