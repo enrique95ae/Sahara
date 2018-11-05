@@ -45,5 +45,49 @@ namespace Sahara
 
         }
 
+        private void item4Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item5Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item6Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item7Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item8Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item9Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void item10Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void previousItemButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nextItemButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
