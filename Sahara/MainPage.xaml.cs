@@ -20,14 +20,9 @@ namespace Sahara
             await Navigation.PushAsync(new ShoppingCartPage());
         }
 
-        private void settingsButton_Clicked(object sender, EventArgs e)
+        private async void profileButton_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void profileButton_Clicked(object sender, EventArgs e)
-        {
-
+            await Navigation.PushAsync(new profilePage());
         }
 
         private async void item1Button_Clicked(object sender, EventArgs e)

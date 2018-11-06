@@ -157,4 +157,7 @@
       <Name>Sahara</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\profilePic.jpg" />
+  </ItemGroup>
 </Project>

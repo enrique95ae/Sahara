@@ -28,7 +28,10 @@
         <Label 
             Text="ObjectXtitle"
             Grid.Row="0"
-            Grid.Column="0"      
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            FontSize="Large"
+            FontAttributes="Bold"
         />
         
         <!-- Price -->

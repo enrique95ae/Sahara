@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Sahara.profilePage">
+    <ContentPage.Content>
+    </ContentPage.Content>
+    
+    <Grid HorizontalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image 
+            x:Name="profilePicImage"
+            Source="profilePic.jpg"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="2"  
+        />
+
+        <Button
+            Text="Messages"
+            Grid.Row="3"
+            Grid.Column="0"
+            Clicked="messagesButton_clicked"
+            HorizontalOptions="StartAndExpand"
+         />
+        
+         
+         <Button
+            Text="Posted Items"
+            Grid.Row="4"
+            Grid.Column="0"
+            Clicked="postedItemsButton_clicked"
+            HorizontalOptions="StartAndExpand"
+         />
+        
+        <Button
+            Text="Switch to seller mode"
+            Grid.Row="5"
+            Grid.Column="0"
+            Clicked="modeButton_clicked"
+            HorizontalOptions="StartAndExpand"
+         />  
+ 
+        <Button
+            Text="Personal Information Settings"
+            Grid.Row="6"
+            Grid.Column="0"
+            Clicked="personalInfoButton_clicked"
+            HorizontalOptions="StartAndExpand"
+            Grid.ColumnSpan="2"
+         />
+        
+        <Button
+            Text="Security Settings"
+            Grid.Row="7"
+            Grid.Column="0"
+            Clicked="securitySettingsButton_clicked"
+            HorizontalOptions="StartAndExpand"
+         />  
+        
+        <Button
+            Text="Billing Information Settings"
+            Grid.Row="8"
+            Grid.Column="0"
+            Clicked="billingInfoButton_clicked"
+            HorizontalOptions="StartAndExpand"
+            Grid.ColumnSpan="2"
+         /> 
+        
+        <Button
+            Text="Delivery Information Settings"
+            Grid.Row="9"
+            Grid.Column="0"
+            Clicked="deliveryInfoButton_clicked"
+            HorizontalOptions="StartAndExpand"
+            Grid.ColumnSpan="2"
+         />             
+        
+    </Grid>
+    
+</ContentPage>
