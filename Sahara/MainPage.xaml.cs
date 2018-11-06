@@ -15,9 +15,9 @@ namespace Sahara
 
         }
 
-        private void notificationsButton_Clicked(object sender, EventArgs e)
+        private async void shoppingCartButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ShoppingCartPage());
         }
 
         private void settingsButton_Clicked(object sender, EventArgs e)

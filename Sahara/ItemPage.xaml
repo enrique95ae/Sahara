@@ -19,9 +19,9 @@
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         
         <!-- Title -->
@@ -37,6 +37,8 @@
             Grid.Row="0"
             Grid.Column="2"
             HorizontalOptions="EndAndExpand"
+            FontSize="Large"
+            FontAttributes="Bold"
         />
         
         <Button 
@@ -93,6 +95,7 @@
             Text="Description:"
             Grid.Column="0"
              Grid.Row="4"
+            FontAttributes="Bold"
          />
         
         <Label
@@ -131,6 +134,7 @@
             Grid.Column="1"
             TextColor="Black"
             HorizontalOptions="CenterAndExpand"
+            FontAttributes="Bold"
           />
         
         <Button
@@ -141,6 +145,7 @@
             BackgroundColor= "#FFCE2B"
             TextColor="White"
             FontSize="Large"
+            FontAttributes="Bold"
         />
  
     </Grid>    

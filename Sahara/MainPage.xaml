@@ -18,6 +18,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="20" />  
             </Grid.RowDefinitions>
+
             
         </Grid>
         
@@ -44,11 +45,11 @@
             />
             
             <Button 
-                x:Name="notificationsButton"
-                Text="N"
+                x:Name="shoppingCartButton"
+                Text="SC"
                 Grid.Row="0"
                 Grid.Column="1"
-                Clicked="notificationsButton_Clicked"    
+                Clicked="shoppingCartButton_Clicked"    
             />
             
              <Button 
