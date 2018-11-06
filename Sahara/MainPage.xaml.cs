@@ -30,9 +30,9 @@ namespace Sahara
 
         }
 
-        private void item1Button_Clicked(object sender, EventArgs e)
+        private async void item1Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
         private void item2Button_Clicked(object sender, EventArgs e)

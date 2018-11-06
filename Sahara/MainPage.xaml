@@ -27,17 +27,16 @@
         </Grid>
         
         <!-- Grid with search bar, notifications, settings and profile -->
-        <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="0.1">
+        <Grid HorizontalOptions="StartAndExpand" Padding="3" ColumnSpacing="0.1">
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="7*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="8*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
-            <Grid.RowDefinitions> 
-                <RowDefinition Height="40" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
             
             <Entry
@@ -58,18 +57,10 @@
             />
             
              <Button 
-                x:Name="settingsButton"
-                Text="S" 
-                Grid.Row="0"
-                Grid.Column="2"
-                Clicked="settingsButton_Clicked"    
-            />
-            
-             <Button 
                 x:Name="profileButton"
                 Text="P" 
                 Grid.Row="0"
-                Grid.Column="3"
+                Grid.Column="2"
                 Clicked="profileButton_Clicked"    
              />   
         </Grid>
