@@ -1,5 +1,148 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Sahara.ItemPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Sahara.ItemPage">
+    
     <ContentPage.Content>
     </ContentPage.Content>
+    
+    <Grid Padding="5" ColumnSpacing="8" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Title -->
+        <Label 
+            Text="ObjectXtitle"
+            Grid.Row="0"
+            Grid.Column="0"      
+        />
+        
+        <!-- Price -->
+        <Label 
+            Text="$200"
+            Grid.Row="0"
+            Grid.Column="2"
+            HorizontalOptions="EndAndExpand"
+        />
+        
+        <Button 
+            Text="PIC1"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="2"
+            BackgroundColor="Purple"
+            TextColor="White"
+        />
+        
+        <Button
+            Text="PIC2"
+            Grid.Row="1"
+            Grid.Column="2"
+            BackgroundColor="Blue"
+            TextColor="White"
+         />
+        
+         <Button
+            Text="PIC3"
+            Grid.Row="2"
+            Grid.Column="2"
+            BackgroundColor="Red"
+            TextColor="White"
+         />
+        
+        <Button
+            Text="PIC4"
+            Grid.Row="3"
+            Grid.Column="0"
+            BackgroundColor="Green"
+            TextColor="White"
+         />
+   
+        <Button
+            Text="PIC5"
+            Grid.Row="3"
+            Grid.Column="1"
+            BackgroundColor="Teal"
+            TextColor="White"
+         />
+        
+         <Button
+            Text="PIC6"
+            Grid.Row="3"
+            Grid.Column="2"
+            BackgroundColor="Olive"
+            TextColor="White"
+         />
+        
+        <Label 
+            Text="Description:"
+            Grid.Column="0"
+             Grid.Row="4"
+         />
+        
+        <Label
+            Text="description of the item being visualized goes here.
+            multiple lines. Multiple lines. Multiples lines
+            multiple lines. Multiple lines. Multiples lines
+            multiple lines. Multiple lines. Multiples lines
+            
+            multiple lines. Multiple lines. Multiples lines."
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+         />
+        
+        <Button
+            Text="-"
+            Grid.Row="6"
+            Grid.Column="0"
+            BackgroundColor="Gray"
+            TextColor="White"
+            BorderWidth="1"
+         />
+        
+        <Button
+            Text="+"
+            Grid.Row="6"
+            Grid.Column="2"
+            BackgroundColor="Gray"
+            TextColor="White"
+            BorderWidth="1"
+         />
+        
+        <Label
+            Text="quantity"
+            Grid.Row="6"
+            Grid.Column="1"
+            TextColor="Black"
+            HorizontalOptions="CenterAndExpand"
+          />
+        
+        <Button
+            Text="Add to cart"
+            Grid.Row="7"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            BackgroundColor= "#FFCE2B"
+            TextColor="White"
+            FontSize="Large"
+        />
+ 
+    </Grid>    
+     
 </ContentPage>
