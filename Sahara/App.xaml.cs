@@ -11,6 +11,7 @@ namespace Sahara
         {
             InitializeComponent();
 
+            //Needed for navigation.
             MainPage = new NavigationPage(new MainPage());
         }
 

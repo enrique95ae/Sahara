@@ -7,9 +7,9 @@
     
     
     <StackLayout>
-        <!-- Place new controls here -->
+<!-- Place new controls here -->
         
-        <!-- Grid with height = 20 emty px to avoid the time and battery logos -->
+<!-- Grid with height = 20 emty px to avoid the time and battery logos -->
         <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
             
             <Grid.ColumnDefinitions>
@@ -19,14 +19,9 @@
                 <RowDefinition Height="20" />  
             </Grid.RowDefinitions>
             
-            <BoxView 
-                Grid.Row="0"
-                Grid.Column="0"
-            />
-            
         </Grid>
         
-        <!-- Grid with search bar, notifications, settings and profile -->
+<!-- Grid with search bar, notifications, settings and profile -->
         <Grid HorizontalOptions="StartAndExpand" Padding="3" ColumnSpacing="0.1">
             
             <Grid.ColumnDefinitions>
@@ -67,17 +62,17 @@
         
         <Label Text="Nearby deals:" />
         
-        <!-- Grid with the 3 nearby item pictures (buttons) -->
+<!-- Grid with the 3 nearby item pictures (buttons) -->
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="120" />
-                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="110" />
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions> 
-                <RowDefinition Height="120" />
+                <RowDefinition Height="110" />
             </Grid.RowDefinitions>
             
             <Button
@@ -114,18 +109,18 @@
         
         <Label Text="Based on your history:" />
         
-        <!-- grid with 6 related items + 1 slot for items that can be navigated through the PREV and NEXT buttons -->
+<!-- grid with 6 related items + 1 slot for items that can be navigated through the PREV and NEXT buttons -->
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120" />
-                <ColumnDefinition Width="120" />
-                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="110" />
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions> 
-                <RowDefinition Height="120" />
-                <RowDefinition Height="120" />
-                <RowDefinition Height="120" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="110" />
             </Grid.RowDefinitions>
             
             <Button
@@ -189,7 +184,7 @@
                 TextColor="White"  
             />
             
-            <!-- Slidable item and buttons -->
+<!-- Slidable item and buttons -->
             <Button
                 x:Name="item10Button"
                 Text="ITEM10"
@@ -218,9 +213,8 @@
                 Grid.Column="2"
                 BackgroundColor="green"
                 TextColor="White"  
-            />                
-                       
-
+            />         
+            
         </Grid>   
         
     </StackLayout>

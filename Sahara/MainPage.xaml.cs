@@ -35,49 +35,49 @@ namespace Sahara
             await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item2Button_Clicked(object sender, EventArgs e)
+        private async void item2Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item3Button_Clicked(object sender, EventArgs e)
+        private async void item3Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item4Button_Clicked(object sender, EventArgs e)
+        private async void item4Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item5Button_Clicked(object sender, EventArgs e)
+        private async void item5Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item6Button_Clicked(object sender, EventArgs e)
+        private async void item6Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item7Button_Clicked(object sender, EventArgs e)
+        private async void item7Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item8Button_Clicked(object sender, EventArgs e)
+        private async void item8Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item9Button_Clicked(object sender, EventArgs e)
+        private async void item9Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
-        private void item10Button_Clicked(object sender, EventArgs e)
+        private async void item10Button_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ItemPage());
         }
 
         private void previousItemButton_Clicked(object sender, EventArgs e)
