@@ -159,5 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\profilePic.jpg" />
+    <BundleResource Include="Resources\profileIcon.jpg" />
+    <BundleResource Include="Resources\shoppingCart.jpg" />
   </ItemGroup>
 </Project>

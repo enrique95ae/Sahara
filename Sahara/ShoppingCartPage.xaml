@@ -6,7 +6,7 @@
     </ContentPage.Content>
     
     
-        <StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Padding="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -36,12 +36,14 @@
                     ItemsSource=""
                     Grid.Row="2"
                     Grid.Column="0"
+                    HasUnevenRows="true"
+                    
                 >
                     <ListView.ItemTemplate>
                         <DataTemplate>
 `                            <ViewCell>
                                 <ViewCell.View>
-                                    <Grid HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+                                    <Grid HorizontalOptions="Start" VerticalOptions="Start">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="30*"/>
                                             <RowDefinition Height="30*"/>
@@ -60,19 +62,22 @@
                                             Grid.Row="0"
                                             Grid.ColumnSpan="2"
                                             Grid.RowSpan="2"
+                                            VerticalOptions="Start"
                                         />
                                     
                                         <Label
                                             Text="{Binding ItemName}"
-                                            Grid.Row="1"
+                                            Grid.Row="0"
                                             Grid.Column="2"
                                         />
                                     
                                         <Label
                                             Text="{Binding ItemPrice}"
-                                            Grid.Row="2"
+                                            Grid.Row="1"
                                             Grid.Column="2"
-                                        />                                      
+                                        />
+
+                                    
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

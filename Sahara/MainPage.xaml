@@ -46,19 +46,23 @@
             
             <Button 
                 x:Name="shoppingCartButton"
-                Text="SC"
+                Text=""
                 Grid.Row="0"
                 Grid.Column="1"
-                Clicked="shoppingCartButton_Clicked"    
+                Clicked="shoppingCartButton_Clicked" 
+                Image="shoppingCart.jpg"
             />
             
-             <Button 
+            
+            <Button
                 x:Name="profileButton"
-                Text="P" 
+                Text=""
                 Grid.Row="0"
                 Grid.Column="2"
-                Clicked="profileButton_Clicked"    
-             />   
+                Clicked="profileButton_Clicked"
+                Image="profilePic.jpg"
+            />
+            
         </Grid>
         
         <Label Text="Nearby deals:" />
