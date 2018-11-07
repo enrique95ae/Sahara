@@ -7,15 +7,117 @@
     <ContentPage.Content>
     </ContentPage.Content>
     
-    <Grid>
+    <Grid Padding="5" HorizontalOptions="Center" VerticalOptions="Center">
         <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="15*"/>
             
         </Grid.ColumnDefinitions>
+        
+        <Label
+            Text="Change Password:"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="Large"
+         />
+   
+         <Label
+            Text="Old Password:"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Start"
+         />
+        
+         <Label
+            Text="Repeat Old Password:"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Start"
+         /> 
+      
+         <Label
+            Text="New Password:"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Start"
+         />
+        
+         <Label
+            Text="Repeat New Password:"
+            Grid.Row="8"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Start"
+         /> 
+        
+        <Entry
+            x:Name="oldPasswordEntry"
+            Text=""          
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            IsPassword="true"
+        />
+        
+        <Entry
+            x:Name="repeatOldPasswordEntry"
+            Text=""          
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            IsPassword="true"
+        />
+        
+        <Entry
+            x:Name="newPasswordEntry"
+            Text=""          
+            Grid.Row="7"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            IsPassword="true"
+        />
+        
+        <Entry
+            x:Name="repeatNewPasswordEntry"
+            Text=""          
+            Grid.Row="9"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            IsPassword="true"
+        /> 
+        
+        <Button
+            x:Name="savePasswordButton"
+            Grid.Row="11"
+            Grid.Column="4"
+            Text="Save" 
+            HorizontalOptions="Start"
+            Clicked="savePassword_Clicked"
+         /> 
+         
     </Grid>
 </ContentPage>
