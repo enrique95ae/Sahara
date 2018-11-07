@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace Sahara
 {
-    public partial class ShoppingCartPage : ContentPage
+    public partial class shoppingCartPage : ContentPage
     {
         public ObservableCollection<Item> ItemList { get; set; }
 
-        public ShoppingCartPage()
+        public shoppingCartPage()
         {
             InitializeComponent();
 

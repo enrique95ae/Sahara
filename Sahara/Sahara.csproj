@@ -19,8 +19,11 @@
     <None Remove="profilePic.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="SecuritySettingsPage.xaml.cs">
+      <DependentUpon>securitySettingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="ShoppingCartPage.xaml.cs">
-      <DependentUpon>ShoppingCartPage.xaml</DependentUpon>
+      <DependentUpon>shoppingCartPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="profilePage.xaml.cs">
       <DependentUpon>profilePage.xaml</DependentUpon>
