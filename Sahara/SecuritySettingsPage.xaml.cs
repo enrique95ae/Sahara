@@ -11,11 +11,7 @@ namespace Sahara
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 102ba282a915f02c19c0b672d6c3970bb10ec1b9
         private async void savePassword_Clicked(object sender, EventArgs e)
         {
 
