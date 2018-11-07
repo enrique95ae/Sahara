@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Sahara
 {
-    public partial class SecuritySettingsPage : ContentPage
+    public partial class securitySettingsPage : ContentPage
     {
-        public SecuritySettingsPage()
+        public securitySettingsPage()
         {
             InitializeComponent();
         }
