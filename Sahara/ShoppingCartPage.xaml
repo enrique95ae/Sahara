@@ -53,7 +53,7 @@
                                             <ColumnDefinition Width="20*"/>
                                             <ColumnDefinition Width="20*"/>
                                             <ColumnDefinition Width="35*"/>
-                                            <ColumnDefinition Width="13*"/>
+                                            <ColumnDefinition Width="15*"/>
                                         </Grid.ColumnDefinitions>
                                     
                                         <Image

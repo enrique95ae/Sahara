@@ -14,7 +14,7 @@ namespace Sahara
 
         private async void authButton_Clicked(object sender, EventArgs e)
         {
-
+            DisplayAlert("Sign In", "USER/PASSWORD box here", "OK", "Cancel");
         }
 
         private async void saveButton_Clicked(object sender, EventArgs e)
