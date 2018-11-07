@@ -12,7 +12,6 @@ namespace Sahara
         public MainPage()
         {
             InitializeComponent();
-
         }
 
         private async void shoppingCartButton_Clicked(object sender, EventArgs e)

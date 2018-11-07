@@ -10,9 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MyPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="profilePic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ShoppingCartPage.xaml.cs">
+      <DependentUpon>ShoppingCartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="profilePage.xaml.cs">
+      <DependentUpon>profilePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

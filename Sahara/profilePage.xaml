@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Sahara.profilePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Sahara.profilePage"
+             >
     <ContentPage.Content>
-    </ContentPage.Content>
-    
-    <Grid HorizontalOptions="CenterAndExpand">
+    </ContentPage.Content>   
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <!--Empty for formatting purposes-->
+            <RowDefinition Height="10*"/> 
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -32,61 +38,76 @@
         />
 
         <Button
+            x:Name="messagesButton"
             Text="Messages"
             Grid.Row="3"
             Grid.Column="0"
-            Clicked="messagesButton_clicked"
+            Clicked="messagesButton_Clicked"
             HorizontalOptions="StartAndExpand"
          />
         
          
          <Button
+            x:Name="postedItemsButton"
             Text="Posted Items"
             Grid.Row="4"
             Grid.Column="0"
-            Clicked="postedItemsButton_clicked"
+            Clicked="postedItemsButton_Clicked"
             HorizontalOptions="StartAndExpand"
          />
         
         <Button
+            x:Name="modeButton"
             Text="Switch to seller mode"
             Grid.Row="5"
             Grid.Column="0"
-            Clicked="modeButton_clicked"
+            Clicked="modeButton_Clicked"
             HorizontalOptions="StartAndExpand"
          />  
- 
-        <Button
-            Text="Personal Information Settings"
+        
+        <Label
+            Text="Settings:"
             Grid.Row="6"
             Grid.Column="0"
-            Clicked="personalInfoButton_clicked"
+            FontAttributes="Bold"
+            FontSize="Medium"
+         />
+ 
+        <Button
+            x:Name="personalInfoButton"
+            Text="Personal Information Settings"
+            Grid.Row="7"
+            Grid.Column="0"
+            Clicked="personalInfoButton_Clicked"
             HorizontalOptions="StartAndExpand"
             Grid.ColumnSpan="2"
          />
         
         <Button
+            x:Name="securitySettingsButton"
             Text="Security Settings"
-            Grid.Row="7"
+            Grid.Row="8"
             Grid.Column="0"
-            Clicked="securitySettingsButton_clicked"
+            Clicked="securitySettingsButton_Clicked"
             HorizontalOptions="StartAndExpand"
          />  
         
         <Button
+            x:Name="billingInfoButton"
             Text="Billing Information Settings"
-            Grid.Row="8"
+            Grid.Row="9"
             Grid.Column="0"
-            Clicked="billingInfoButton_clicked"
+            Clicked="billingInfoButton_Clicked"
             HorizontalOptions="StartAndExpand"
             Grid.ColumnSpan="2"
          /> 
         
         <Button
+            x:Name="deliveryInfoButton"
             Text="Delivery Information Settings"
-            Grid.Row="9"
+            Grid.Row="10"
             Grid.Column="0"
-            Clicked="deliveryInfoButton_clicked"
+            Clicked="deliveryInfoButton_Clicked"
             HorizontalOptions="StartAndExpand"
             Grid.ColumnSpan="2"
          />             

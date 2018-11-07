@@ -1,15 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
 namespace Sahara
 {
     public partial class ShoppingCartPage : ContentPage
     {
+        public ObservableCollection<Item> ItemList { get; set; }
+
         public ShoppingCartPage()
         {
             InitializeComponent();
+
+            PopulateShoppingCart();
         }
+
+        private void PopulateShoppingCart()
+        {
+            ItemList = new ObservableCollection<Item>()
+            {
+                new Item()
+                {
+                    ItemName = "Profile Picture",
+                    ItemPrice = 200,
+                    ItemImage = "profilePic.jpg"
+
+                }
+            };
+
+            shoppingCartListView.ItemsSource = ItemList;
+        }
+
     }
 }

@@ -43,7 +43,7 @@
             FontSize="Large"
             FontAttributes="Bold"
         />
-        
+
         <Button 
             Text="PIC1"
             Grid.Row="1"
@@ -52,6 +52,8 @@
             Grid.RowSpan="2"
             BackgroundColor="Purple"
             TextColor="White"
+            MinimumWidthRequest="150"
+            MinimumHeightRequest="150"
         />
         
         <Button
@@ -60,6 +62,8 @@
             Grid.Column="2"
             BackgroundColor="Blue"
             TextColor="White"
+            MinimumWidthRequest="75"
+            MinimumHeightRequest="75"
          />
         
          <Button
