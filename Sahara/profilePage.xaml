@@ -4,7 +4,8 @@
              x:Class="Sahara.profilePage"
              >
     <ContentPage.Content>
-    </ContentPage.Content>   
+    </ContentPage.Content>  
+
     <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
