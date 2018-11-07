@@ -42,7 +42,7 @@
                         <DataTemplate>
 `                            <ViewCell>
                                 <ViewCell.View>
-                                    <Grid HorizontalOptions="Start" VerticalOptions="Start">
+                                    <Grid HorizontalOptions="Start" VerticalOptions="Start" Padding="10">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="30*"/>
                                             <RowDefinition Height="30*"/>
@@ -50,9 +50,10 @@
                                         </Grid.RowDefinitions>
                                     
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="30*"/>
-                                            <ColumnDefinition Width="30*"/>
-                                            <ColumnDefinition Width="30*"/>
+                                            <ColumnDefinition Width="20*"/>
+                                            <ColumnDefinition Width="20*"/>
+                                            <ColumnDefinition Width="35*"/>
+                                            <ColumnDefinition Width="13*"/>
                                         </Grid.ColumnDefinitions>
                                     
                                         <Image
@@ -62,21 +63,35 @@
                                             Grid.ColumnSpan="2"
                                             Grid.RowSpan="2"
                                             VerticalOptions="Start"
+                                            HorizontalOptions="Start"
                                         />
                                     
                                         <Label
                                             Text="{Binding ItemName}"
                                             Grid.Row="0"
                                             Grid.Column="2"
+                                            VerticalOptions="Start"
+                                            HorizontalOptions="Start"
                                         />
                                     
                                         <Label
                                             Text="{Binding ItemPrice}"
                                             Grid.Row="1"
                                             Grid.Column="2"
+                                            VerticalOptions="Start"
+                                            HorizontalOptions="Start"
+                                        />
+                                    
+                                        <Button
+                                            x:Name="deleteItem"
+                                            Text="Delete"
+                                            Grid.Column="3"
+                                            Grid.Row="1"
+                                            TextColor="Red"
+                                            VerticalOptions="End"
+                                            HorizontalOptions="End"
                                         />
 
-                                    
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

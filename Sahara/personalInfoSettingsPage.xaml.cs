@@ -12,5 +12,19 @@ namespace Sahara
             InitializeComponent();
         }
 
+        private async void authButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void saveButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        void Handle_Completed(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

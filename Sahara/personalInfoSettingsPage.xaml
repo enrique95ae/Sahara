@@ -8,20 +8,21 @@
     <ContentPage.Content>
     </ContentPage.Content>
     
-    <Grid Padding="8" HorizontalOptions="CenterAndExpand"> 
+    <Grid Padding="8" HorizontalOptions="Center" VerticalOptions="Center"> 
         <Grid.RowDefinitions>
-            <RowDefinition Height="0"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="80*"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="35*"/>
             <ColumnDefinition Width="30*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
@@ -33,44 +34,48 @@
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="3"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
          />
         
         <Label
             Text="Firsrt name:"
-            FontSize="Small"
+            FontSize="Medium"
             FontAttributes="Bold"
             Grid.Row="3"
             Grid.Column="0"
-            HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
          />
         
          <Label
             Text="Last name:"
-            FontSize="Small"
+            FontSize="Medium"
             FontAttributes="Bold"
             Grid.Row="4"
             Grid.Column="0"
-            HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
          />
         
          <Label
             Text="E-mail:"
             FontAttributes="Bold"
-            FontSize="Small"
+            FontSize="Medium"
             Grid.Row="5"
             Grid.Column="0"
-            HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
          />
         
          <Label
             Text="Phone Number:"
-            FontSize="Small"
+            FontSize="Medium"
             FontAttributes="Bold"
             Grid.Row="6"
             Grid.Column="0"
-            HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
          />
         
         <Button
@@ -78,13 +83,54 @@
             Text="Click to edit"
             Grid.Row="7"
             Grid.Column="0"
+            Clicked="authButton_Clicked"
+            VerticalOptions="End"
          />
             
          <Button
             x:Name="saveChangesButton"
             Text="Save changes"
             Grid.Row="7"
-            Grid.Column="3"
+            Grid.Column="2"
+            Clicked="saveButton_Clicked"
+            VerticalOptions="End"
          /> 
+        
+        <Entry
+            x:Name="firstNameEntry"
+            Text="default Name"
+            
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Completed="Handle_Completed"
+         />
+        
+         <Entry
+            x:Name="lastNameEntry"
+            Text="default Last Name"
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+         />
+        
+        <Entry
+            x:Name="emailEntry"
+            Keyboard="Email"
+            Text="default email"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+         />  
+        
+        <Entry
+            x:Name="phoneNumberEntry"
+            Text="default phone number"
+            Keyboard="Telephone"
+            Grid.Row="6"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+         />                
+        
     </Grid>  
 </ContentPage>

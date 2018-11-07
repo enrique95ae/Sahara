@@ -29,7 +29,7 @@ namespace Sahara
 
         private async void personalInfoButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new personalInfoSettingsPage());
         }
 
         private async void securitySettingsButton_Clicked(object sender, EventArgs e)
