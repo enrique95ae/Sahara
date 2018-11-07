@@ -36,8 +36,7 @@
                     ItemsSource=""
                     Grid.Row="2"
                     Grid.Column="0"
-                    HasUnevenRows="true"
-                    
+                    HasUnevenRows="true"   
                 >
                     <ListView.ItemTemplate>
                         <DataTemplate>

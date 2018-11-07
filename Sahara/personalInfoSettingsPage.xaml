@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Sahara.personalInfoSettingsPage"
+             >
+    
+    
+    <ContentPage.Content>
+    </ContentPage.Content>
+    
+    <Grid Padding="8" HorizontalOptions="CenterAndExpand"> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label
+            Text="Personal Information:"
+            FontAttributes="Bold"
+            FontSize="Large"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+         />
+        
+        <Label
+            Text="Firsrt name:"
+            FontSize="Small"
+            FontAttributes="Bold"
+            Grid.Row="3"
+            Grid.Column="0"
+            HorizontalOptions="CenterAndExpand"
+         />
+        
+         <Label
+            Text="Last name:"
+            FontSize="Small"
+            FontAttributes="Bold"
+            Grid.Row="4"
+            Grid.Column="0"
+            HorizontalOptions="CenterAndExpand"
+         />
+        
+         <Label
+            Text="E-mail:"
+            FontAttributes="Bold"
+            FontSize="Small"
+            Grid.Row="5"
+            Grid.Column="0"
+            HorizontalOptions="CenterAndExpand"
+         />
+        
+         <Label
+            Text="Phone Number:"
+            FontSize="Small"
+            FontAttributes="Bold"
+            Grid.Row="6"
+            Grid.Column="0"
+            HorizontalOptions="CenterAndExpand"
+         />
+        
+        <Button
+            x:Name="authButton"
+            Text="Click to edit"
+            Grid.Row="7"
+            Grid.Column="0"
+         />
+            
+         <Button
+            x:Name="saveChangesButton"
+            Text="Save changes"
+            Grid.Row="7"
+            Grid.Column="3"
+         /> 
+    </Grid>  
+</ContentPage>
