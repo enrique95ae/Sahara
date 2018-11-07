@@ -1,12 +1,139 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sahara.billingInfoPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Sahara.billingInfoPage"
+             >
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
     </ContentPage.Content>
+    
+    <Grid Padding="5" HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="15*"/>
+            
+        </Grid.ColumnDefinitions>
+        
+        <Label
+            Text="Billing Information:"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="Large"
+         />
+   
+         <Label
+            Text="Address line 1:"
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Start"
+         />
+        
+         <Label
+            Text="Address Line 2:"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Start"
+         /> 
+      
+         <Label
+            Text="City:"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Start"
+         />
+        
+         <Label
+            Text="State:"
+            Grid.Row="8"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Start"
+         />
+        
+         <Label
+            Text="ZIP code:"
+            Grid.Row="10"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Start"
+         /> 
+        
+        <Entry
+            x:Name="addressLine1Entry"
+            Text=""          
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+        />
+        
+        <Entry
+            x:Name="addressLine2Entry"
+            Text=""          
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+        />
+        
+        <Entry
+            x:Name="cityEntry"
+            Text=""          
+            Grid.Row="7"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+        />
+        
+        <Entry
+            x:Name="stateEntry"
+            Text=""          
+            Grid.Row="9"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+        /> 
+        
+        <Entry
+            x:Name="zipEntry"
+            Text=""          
+            Grid.Row="11"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+        /> 
+        
+        <Button
+            x:Name="saveBillingInformationButton"
+            Grid.Row="15"
+            Grid.Column="4"
+            Text="Save" 
+            HorizontalOptions="Start"
+            Clicked="saveBillingInformationButton_Clicked"
+         /> 
+         
+    </Grid>
 </ContentPage>

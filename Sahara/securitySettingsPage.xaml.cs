@@ -12,7 +12,7 @@ namespace Sahara
             InitializeComponent();
         }
 
-        private async void savePassword_Clicked(object sender, EventArgs e)
+        private async void savePasswordButton_Clicked(object sender, EventArgs e)
         {
 
         }

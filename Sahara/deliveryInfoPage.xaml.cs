@@ -9,7 +9,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Sahara
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class deliveryInfoPage : ContentPage
 	{
 		public deliveryInfoPage ()
