@@ -33,9 +33,16 @@ namespace Sahara
                     ItemName = "Shopping cart",
                     ItemPrice = 1000,
                     ItemImage = "shoppingCart.jpg"
-				}
+				},
 
-			};
+                new Item()
+                {
+                    ItemName = "item 3",
+                    ItemPrice = 50,
+                    ItemImage = "profilePic.jpg"
+                }
+
+            };
 
             shoppingCartListView.ItemsSource = ItemList;
         }

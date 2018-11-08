@@ -40,7 +40,7 @@
                 >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-`                            <ViewCell>
+                            <ViewCell>
                                 <ViewCell.View>
                                     <Grid HorizontalOptions="Start" VerticalOptions="Start" Padding="10">
                                         <Grid.RowDefinitions>
