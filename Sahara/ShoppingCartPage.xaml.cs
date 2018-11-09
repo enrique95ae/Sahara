@@ -24,7 +24,7 @@ namespace Sahara
                 {
                     ItemTitle = "Profile Picture",
                     ItemPrice = 200,
-                    ItemImage = "profilePic.jpg"
+                    ItemImage1 = "profilePic.jpg"
 
 				},
 
@@ -32,14 +32,14 @@ namespace Sahara
 				{
                     ItemTitle = "Shopping cart",
                     ItemPrice = 1000,
-                    ItemImage = "shoppingCart.jpg"
+                    ItemImage1 = "shoppingCart.jpg"
 				},
 
                 new Item()
                 {
                     ItemTitle = "item 3",
                     ItemPrice = 50,
-                    ItemImage = "profilePic.jpg"
+                    ItemImage1 = "profilePic.jpg"
                 }
 
             };
