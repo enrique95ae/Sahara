@@ -15,6 +15,7 @@
   <ItemGroup>
     <Compile Remove="MyPage.cs" />
     <Compile Remove="connection.cs" />
+    <Compile Remove="itemClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="profilePic.jpg" />

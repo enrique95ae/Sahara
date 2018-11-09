@@ -22,7 +22,7 @@ namespace Sahara
             {
                 new Item()
                 {
-                    ItemName = "Profile Picture",
+                    ItemTitle = "Profile Picture",
                     ItemPrice = 200,
                     ItemImage = "profilePic.jpg"
 
@@ -30,14 +30,14 @@ namespace Sahara
 
 				new Item()
 				{
-                    ItemName = "Shopping cart",
+                    ItemTitle = "Shopping cart",
                     ItemPrice = 1000,
                     ItemImage = "shoppingCart.jpg"
 				},
 
                 new Item()
                 {
-                    ItemName = "item 3",
+                    ItemTitle = "item 3",
                     ItemPrice = 50,
                     ItemImage = "profilePic.jpg"
                 }
