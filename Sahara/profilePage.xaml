@@ -111,8 +111,16 @@
             Clicked="deliveryInfoButton_Clicked"
             HorizontalOptions="StartAndExpand"
             Grid.ColumnSpan="2"
+         />
+            
+         <Button
+            x:Name="logInButton"
+            Text="Log in"
+            Grid.Row="12"
+            Grid.Column="1"
+            Clicked="logInButton_Clicked"
+            FontSize="Large"
+            HorizontalOptions="StartAndExpand"
          />             
-        
     </Grid>
-    
 </ContentPage>
