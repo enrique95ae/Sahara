@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="Sahara.logInPage"
+             x:Class="Sahara.SignUpPage"
              >
     <ContentPage.Content>
+    </ContentPage.Content>
         <StackLayout>
              <Grid Padding="10">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
                     <RowDefinition Height="10*"/>
                     <RowDefinition Height="10*"/>
                     <RowDefinition Height="10*"/>
@@ -24,11 +29,12 @@
                 </Grid.ColumnDefinitions>
                 
                 <Label
-                    Text="Email:"
+                    Text="Enter your email:"
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="2"
                     Grid.Column="0"
+                    Grid.ColumnSpan="4"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                  />
@@ -36,9 +42,9 @@
                 <Entry
                     x:Name="emailEntry"
                     Text="enter email here"
-                    Grid.Row="2"
+                    Grid.Row="3"
                     Grid.Column="1"
-                    Grid.ColumnSpan="3"
+                    Grid.ColumnSpan="2"
                     HorizontalOptions="Fill"
                     VerticalOptions="Center" 
                 />
@@ -49,31 +55,53 @@
                     FontSize="Large"
                     Grid.Row="4"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    HorizontalOptions="StartAndExpand"
-                    VerticalOptions="FillAndExpand"
+                    Grid.ColumnSpan="4"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
                  />
                 
                 <Entry
                     x:Name="passwordEntry"
                     Text=""
-                    Grid.Row="4"
-                    Grid.Column="2"
-                    Grid.ColumnSpan="3"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center" 
+                    IsPassword="false"
+                />
+                 
+                <Label
+                    Text="Repeat Password:"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" 
+                 />
+            
+                <Entry
+                    x:Name="RepeatPasswordEntry"
+                    Text=""
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
                     HorizontalOptions="Fill"
                     VerticalOptions="Center" 
                     IsPassword="false"
                 />
                 
                 <Button
-                    x:Name="LogInButton"
-                    Text="Log In"
-                    Grid.Row="5"
+                    x:Name="CreateAccount_Button"
+                    Text="Create Account"
+                    Grid.Row="8"
                     Grid.Column="2"
-                    Clicked="LogInButton_Clicked"
+                    Grid.ColumnSpan="2"
+                    Clicked="CreateAccountButton_Clicked"
                  />
                 
             </Grid>
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

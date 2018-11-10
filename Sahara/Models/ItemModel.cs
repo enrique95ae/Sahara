@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace Sahara
 {
-    public class Item
+    public class ItemModel
     {
         public int ItemId { get; set; }
         public string ItemTitle { get; set; }

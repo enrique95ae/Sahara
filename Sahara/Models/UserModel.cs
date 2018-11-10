@@ -2,7 +2,7 @@
 
 namespace Sahara
 {
-    public class User
+    public class UserModel
     {
         public int UserId { get; set; }
         public string UserName { get; set; }

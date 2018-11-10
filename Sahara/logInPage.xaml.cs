@@ -11,5 +11,10 @@ namespace Sahara
         {
             InitializeComponent();
         }
+
+        private async void LogInButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

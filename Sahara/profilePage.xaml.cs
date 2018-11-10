@@ -51,5 +51,10 @@ namespace Sahara
         {
             await Navigation.PushAsync(new logInPage());
         }
+
+        private async void SignUpButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignUpPage());
+        }
     }
 }

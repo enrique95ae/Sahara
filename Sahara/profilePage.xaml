@@ -121,6 +121,16 @@
             Clicked="logInButton_Clicked"
             FontSize="Large"
             HorizontalOptions="StartAndExpand"
-         />             
+         />  
+        
+         <Button
+            x:Name="SignUpButton"
+            Text="Sign up"
+            Grid.Row="12"
+            Grid.Column="0"
+            Clicked="SignUpButton_Clicked"
+            FontSize="Large"
+            HorizontalOptions="StartAndExpand"
+         />
     </Grid>
 </ContentPage>

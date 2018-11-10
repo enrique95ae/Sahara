@@ -7,7 +7,7 @@ namespace Sahara
 {
     public partial class shoppingCartPage : ContentPage
     {
-        public ObservableCollection<Item> ItemList { get; set; }
+        public ObservableCollection<ItemModel> ItemList { get; set; }
 
         public shoppingCartPage()
         {
@@ -18,9 +18,9 @@ namespace Sahara
 
         private void PopulateShoppingCart()
         {
-            ItemList = new ObservableCollection<Item>()
+            ItemList = new ObservableCollection<ItemModel>()
             {
-                new Item()
+                new ItemModel()
                 {
                     ItemTitle = "Profile Picture",
                     ItemPrice = 200,
@@ -28,14 +28,14 @@ namespace Sahara
 
 				},
 
-				new Item()
+				new ItemModel()
 				{
                     ItemTitle = "Shopping cart",
                     ItemPrice = 1000,
                     ItemImage1 = "shoppingCart.jpg"
 				},
 
-                new Item()
+                new ItemModel()
                 {
                     ItemTitle = "item 3",
                     ItemPrice = 50,
