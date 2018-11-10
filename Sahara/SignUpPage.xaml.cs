@@ -19,30 +19,33 @@ namespace Sahara
         public SignUpPage(UserModel userData)
         {
             InitializeComponent();
-            _userData = userData;   
+            _userData = userData;
+            _userData.UserName = "testName";
+            _userData.UserEmail = "testEmail";
+            _userData.UserPassword = "testPassword";
         }
 
 
 
         void CreateAccountButton_Clicked(object sender, EventArgs e)
         {
-            var newAccountInfo = new CreateAccountEvent(RepeatPasswordEntry.Text ,emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
+            var newAccountInfo = new CreateAccountEvent(RepeatPasswordEntry.Text, emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
 
-           
-                if (!Globals.UserConnected)
-                {
-                    var tcpClient = new TcpClient("127.0.0.1", 27015);
-                    _userData = new UserModel(tcpClient);
-                    Globals.UserConnected = true;
-                }
-          
+
+            if (!Globals.UserConnected)
+            {
+                var tcpClient = new TcpClient("127.0.0.1", 27015);
+                _userData = new UserModel(tcpClient);
+                Globals.UserConnected = true;
+            }
+
 
             Serializer.SerializeWithLengthPrefix(_userData.UserStream, newAccountInfo, PrefixStyle.Base128);
 
-           // var responseFromServer = Serializer.DeserializeWithLengthPrefix<>
+            // var responseFromServer = Serializer.DeserializeWithLengthPrefix<>
 
 
-           //await Navigation.PopAsync();
+            //await Navigation.PopAsync();
         }
     }
 }

@@ -23,13 +23,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SecuritySettingsPage.xaml.cs">
-      <DependentUpon>securitySettingsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="ShoppingCartPage.xaml.cs">
-      <DependentUpon>shoppingCartPage.xaml</DependentUpon>
+      <DependentUpon>SecuritySettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="profilePage.xaml.cs">
-      <DependentUpon>profilePage.xaml</DependentUpon>
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="BillingInfoPage.xaml.cs">
+      <DependentUpon>BillingInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="deliveryInfoPage.xaml.cs">
+      <DependentUpon>DeliveryInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="DeliveryInfoPage.xaml.cs">
+      <DependentUpon>DeliveryInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="logInPage.xaml.cs">
+      <DependentUpon>LogInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="LogInPage.xaml.cs">
+      <DependentUpon>LogInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="messagesPage.xaml.cs">
+      <DependentUpon>MessagesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MessagesPage.xaml.cs">
+      <DependentUpon>MessagesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="modePage.xaml.cs">
+      <DependentUpon>ModePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="ModePage.xaml.cs">
+      <DependentUpon>ModePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="personalInfoSettingsPage.xaml.cs">
+      <DependentUpon>PersonalInfoSettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="PersonalInfoSettingsPage.xaml.cs">
+      <DependentUpon>PersonalInfoSettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="postedItemsPage.xaml.cs">
+      <DependentUpon>PostedItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="PostedItemsPage.xaml.cs">
+      <DependentUpon>PostedItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="securitySettingsPage.xaml.cs">
+      <DependentUpon>SecuritySettingsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
