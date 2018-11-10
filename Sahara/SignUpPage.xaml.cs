@@ -16,7 +16,15 @@ namespace Sahara
             InitializeComponent();
         }
 
-        private async void CreateAccountButton_Clicked(object sender, EventArgs e)
+        public SignUpPage(UserModel userData)
+        {
+            InitializeComponent();
+            _userData = userData;   
+        }
+
+
+
+        void CreateAccountButton_Clicked(object sender, EventArgs e)
         {
             var newAccountInfo = new CreateAccountEvent(RepeatPasswordEntry.Text ,emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
 
@@ -34,7 +42,7 @@ namespace Sahara
            // var responseFromServer = Serializer.DeserializeWithLengthPrefix<>
 
 
-           await Navigation.PopAsync();
+           //await Navigation.PopAsync();
         }
     }
 }
