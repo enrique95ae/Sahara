@@ -18,7 +18,7 @@ namespace Sahara
 
         private async void CreateAccountButton_Clicked(object sender, EventArgs e)
         {
-            var newAccountInfo = new CreateAccountEvent(emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
+            var newAccountInfo = new CreateAccountEvent(RepeatPasswordEntry.Text ,emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
 
            
                 if (!Globals.UserConnected)
