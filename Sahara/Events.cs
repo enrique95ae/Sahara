@@ -38,11 +38,14 @@ namespace Sahara
 
     public class CreateAccountEvent : BaseEvent
     {
-        [ProtoMember(1)]
+        [ProtoMember(2)]
         public string UserEmail { get; set; }
 
-        [ProtoMember(2)]
+        [ProtoMember(3)]
          public string UserPassword { get; set; }
+
+        [ProtoMember(4)]
+        public string UserRepeatPassword { get; set; }
 
 
         public CreateAccountEvent()
@@ -50,13 +53,15 @@ namespace Sahara
             Type = EventType.CreateAccount;
             UserEmail = null;
             UserPassword = null;
+            UserRepeatPassword = null;
         }
 
-        public CreateAccountEvent(string email, string password)
+        public CreateAccountEvent(string email, string password, string userRepeatPassword)
         {
             Type = EventType.CreateAccount;
             UserEmail = email;
             UserPassword = password;
+            UserRepeatPassword = userRepeatPassword;
         }
 
     }
