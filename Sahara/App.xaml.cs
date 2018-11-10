@@ -6,7 +6,6 @@ using System.Net;
 using System.Text;
 using System.Net.Sockets;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Sahara
 {
     public partial class App : Application
