@@ -50,7 +50,7 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 Clicked="shoppingCartButton_Clicked" 
-                Image="shoppingCart.jpg"
+                
             />
             
             
@@ -60,7 +60,7 @@
                 Grid.Row="0"
                 Grid.Column="2"
                 Clicked="profileButton_Clicked"
-                Image="profilePic.jpg"
+                
             />
             
         </Grid>
@@ -113,114 +113,37 @@
         </Grid>
         
         <Label Text="Based on your history:" />
-        
-<!-- grid with 6 related items + 1 slot for items that can be navigated through the PREV and NEXT buttons -->
-        <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="110" />
-                <ColumnDefinition Width="110" />
-                <ColumnDefinition Width="110" />
-            </Grid.ColumnDefinitions>
-            
-            <Grid.RowDefinitions> 
-                <RowDefinition Height="110" />
-                <RowDefinition Height="110" />
-                <RowDefinition Height="110" />
-            </Grid.RowDefinitions>
-            
-            <Button
-                x:Name="item4Button"
-                Text="ITEM4"
-                Clicked="item4Button_Clicked"
-                Grid.Row="0"
-                Grid.Column="0"
-                BackgroundColor="Purple"
-                TextColor="White"
-             />  
-            
-            <Button
-                x:Name="item5Button"
-                Text="ITEM5"
-                Clicked="item5Button_Clicked"
-                Grid.Row="0"
-                Grid.Column="1"
-                BackgroundColor="Purple"
-                TextColor="White"
-             />  
-            
-            <Button
-                x:Name="item6Button"
-                Text="ITEM6"
-                Clicked="item6Button_Clicked"
-                Grid.Row="0"
-                Grid.Column="2"
-                BackgroundColor="Purple"
-                TextColor="White"  
-            
-            />
-            
-            <Button
-                x:Name="item7Button"
-                Text="ITEM7"
-                Clicked="item7Button_Clicked"
-                Grid.Row="1"
-                Grid.Column="0"
-                BackgroundColor="Purple"
-                TextColor="White"
-             />  
-            
-            <Button
-                x:Name="item8Button"
-                Text="ITEM8"
-                Clicked="item8Button_Clicked"
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="Purple"
-                TextColor="White"
-             />  
-            
-            <Button
-                x:Name="item9Button"
-                Text="ITEM9"
-                Clicked="item9Button_Clicked"
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="Purple"
-                TextColor="White"  
-            />
-            
-<!-- Slidable item and buttons -->
-            <Button
-                x:Name="item10Button"
-                Text="ITEM10"
-                Clicked="item10Button_Clicked"
-                Grid.Row="2"
-                Grid.Column="1"
-                BackgroundColor="Purple"
-                TextColor="White"  
-            />
-            
-            <Button
-                x:Name="previousItemButton"
-                Text="PREV"
-                Clicked="previousItemButton_Clicked"
-                Grid.Row="2"
-                Grid.Column="0"
-                BackgroundColor="green"
-                TextColor="White"  
-            /> 
-            
-            <Button
-                x:Name="nextItemButton"
-                Text="NEXT"
-                Clicked="nextItemButton_Clicked"
-                Grid.Row="2"
-                Grid.Column="2"
-                BackgroundColor="green"
-                TextColor="White"  
-            />         
-            
-        </Grid>   
+
+        <ListView
+            x:Name="HistoryListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem
+                                Text="More"
+                                Clicked="Handle_ItemClick"
+                                CommandParameter="{Binding .}" />
+                        </ViewCell.ContextActions>
+                        <ViewCell.View>
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Label  
+                                    Text="{Binding ItemTitle}"/>
+                                <Label
+                                    Text="Put picture here"/>
+                                <Label
+                                    Text="{Binding ItemPrice}"/>
+                                <Button
+                                    Text="More"
+                                    Clicked="Handle_ItemClick"
+                                    CommandParameter="{Binding .}" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         
     </StackLayout>
     

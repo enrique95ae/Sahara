@@ -11,5 +11,12 @@ namespace Sahara
         {
             InitializeComponent();
         }
+
+        public ItemPage(ItemModel item)
+        {
+            InitializeComponent();
+
+            BindingContext = item;
+        }
     }
 }

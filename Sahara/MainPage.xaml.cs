@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace Sahara
         public MainPage()
         {
             InitializeComponent();
+            PopulateItemListView();
         }
 
         private async void shoppingCartButton_Clicked(object sender, EventArgs e)
@@ -41,50 +43,37 @@ namespace Sahara
         {
             await Navigation.PushAsync(new ItemPage());
         }
-
-        private async void item4Button_Clicked(object sender, EventArgs e)
+        private void PopulateItemListView()
         {
-            await Navigation.PushAsync(new ItemPage());
+            var itemList = new ObservableCollection<ItemModel>();
+
+            var item1 = new ItemModel
+            {
+                ItemId = 1,
+                ItemTitle = "Skittles",
+                ItemDescription = "Wow it's candy.",
+                ItemPrice = 99.99,
+            };
+            var item2 = new ItemModel
+            {
+                ItemId = 2,
+                ItemTitle = "Skittles But More",
+                ItemDescription = "Wow it's more candy. Like holy shit that's a lotta skittles.",
+                ItemPrice = 999.99,
+            };
+
+            itemList.Add(item1);
+            itemList.Add(item2);
+
+            HistoryListView.ItemsSource = itemList;
         }
 
-        private async void item5Button_Clicked(object sender, EventArgs e)
+        void Handle_ItemClick(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ItemPage());
+            var menuItem = (Button)sender;
+            var item = (ItemModel)menuItem.CommandParameter;
+            Navigation.PushAsync(new ItemPage(item));
         }
 
-        private async void item6Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemPage());
-        }
-
-        private async void item7Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemPage());
-        }
-
-        private async void item8Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemPage());
-        }
-
-        private async void item9Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemPage());
-        }
-
-        private async void item10Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ItemPage());
-        }
-
-        private void previousItemButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nextItemButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
     }
 }

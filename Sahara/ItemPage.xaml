@@ -27,7 +27,7 @@
         
         <!-- Title -->
         <Label 
-            Text="ObjectXtitle"
+            Text="{Binding ItemTitle}"
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
@@ -37,7 +37,7 @@
         
         <!-- Price -->
         <Label 
-            Text="$200"
+            Text="{Binding ItemPrice}"
             Grid.Row="0"
             Grid.Column="2"
             HorizontalOptions="EndAndExpand"
@@ -107,12 +107,7 @@
          />
         
         <Label
-            Text="description of the item being visualized goes here.
-            multiple lines. Multiple lines. Multiples lines
-            multiple lines. Multiple lines. Multiples lines
-            multiple lines. Multiple lines. Multiples lines
-            
-            multiple lines. Multiple lines. Multiples lines."
+            Text="{Binding ItemDescription}"
             Grid.Row="5"
             Grid.Column="0"
             Grid.ColumnSpan="3"
