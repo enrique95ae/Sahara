@@ -2,7 +2,7 @@
 
 namespace Sahara
 {
-
+    /*
     public class CreateAccountEvent : BaseEvent
     {
         [ProtoMember(1)]
@@ -35,5 +35,5 @@ namespace Sahara
             UserPassword = password;
             UserRepeatPassword = userRepeatPassword;
         }
-    }
+    }*/
 }
