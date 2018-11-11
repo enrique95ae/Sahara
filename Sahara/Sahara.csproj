@@ -17,6 +17,7 @@
     <Compile Remove="MyPage.cs" />
     <Compile Remove="connection.cs" />
     <Compile Remove="itemClass.cs" />
+    <Compile Remove="Events\CreateAccountEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="profilePic.jpg" />
