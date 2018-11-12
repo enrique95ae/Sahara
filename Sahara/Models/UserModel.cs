@@ -30,6 +30,9 @@ namespace Sahara
         //public int UserCreditCardCVC
         //public string UserCreditCardExpirationDate { get; set; }
 
+        //SELLING DATA
+        //public bool IsVerified = false;
+
         public UserModel()
         {
             TcpClient = null;
@@ -37,7 +40,6 @@ namespace Sahara
             UserName = null;
             UserEmail = null;
             UserPassword = null;
-
         }
 
         public UserModel(TcpClient tcpClient)
