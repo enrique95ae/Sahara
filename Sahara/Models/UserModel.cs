@@ -31,7 +31,7 @@ namespace Sahara
         //public string UserCreditCardExpirationDate { get; set; }
 
         //SELLING DATA
-        //public bool IsVerified = false;
+        //public bool UserIsVerified = false;
 
         public UserModel()
         {
