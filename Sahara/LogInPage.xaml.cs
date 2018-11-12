@@ -49,9 +49,8 @@ namespace Sahara
                 Serializer.SerializeWithLengthPrefix(_userData.UserStream, _userData.AccountData, PrefixStyle.Base128);
                 _userData.AccountData = Serializer.DeserializeWithLengthPrefix<AccountData>(_userData.UserStream, PrefixStyle.Base128);
 
+
                 await DisplayAlert("SUCCESS", "You are now logged in.", "OK");
-
-
                 await Navigation.PopAsync();
             }
             else

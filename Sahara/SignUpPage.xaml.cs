@@ -43,8 +43,9 @@ namespace Sahara
                 //Transforms the newAccountInfo into a "Protocol Buffer Representation" ready to be sent to the server where it will be deserialized.
                 Serializer.SerializeWithLengthPrefix(_userData.UserStream, newAccountInfo, PrefixStyle.Base128);
 
-                var responseFromServer = Serializer.DeserializeWithLengthPrefix<ResponseEvent>(_userData.UserStream, PrefixStyle.Base128);
+               //var responseFromServer = Serializer.DeserializeWithLengthPrefix<ResponseEvent>(_userData.UserStream, PrefixStyle.Base128);
 
+                /*
                 if (responseFromServer.EventProcessSuccess)
                 {
                     await DisplayAlert("Success!", "Your account has been created!", "OK");
@@ -53,6 +54,7 @@ namespace Sahara
                 {
                     await DisplayAlert("Error:", "Internal server error.", "OK");
                 }
+                */
 
                 await Navigation.PopAsync();
             }
