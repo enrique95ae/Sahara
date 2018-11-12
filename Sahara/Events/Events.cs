@@ -28,6 +28,7 @@ namespace Sahara
 
     [ProtoContract]
     [ProtoInclude(50, typeof(CreateAccountEvent))]
+    [ProtoInclude(51, typeof(LoginEvent))]
 
 
     public class BaseEvent

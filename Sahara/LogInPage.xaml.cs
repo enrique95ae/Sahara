@@ -41,11 +41,13 @@ namespace Sahara
 
             if (responseData.EventProcessSuccess)
             {
-                 _userData.AccountData.UserEmail = emailEntry.Text;
+                //If login successfully:
+                //We use the email in order to find the user in the database and retrieve it's information.
+                _userData.AccountData.UserEmail = emailEntry.Text;
+                    
 
-
-                  Serializer.SerializeWithLengthPrefix(_userData.UserStream, _userData.AccountData, PrefixStyle.Base128);
-                  _userData.AccountData = Serializer.DeserializeWithLengthPrefix<AccountData>(_userData.UserStream, PrefixStyle.Base128);
+                Serializer.SerializeWithLengthPrefix(_userData.UserStream, _userData.AccountData, PrefixStyle.Base128);
+                _userData.AccountData = Serializer.DeserializeWithLengthPrefix<AccountData>(_userData.UserStream, PrefixStyle.Base128);
 
                 await DisplayAlert("SUCCESS", "You are now logged inx.", "OK");
 
