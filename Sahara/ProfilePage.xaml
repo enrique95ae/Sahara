@@ -125,7 +125,7 @@
         
          <Button
             x:Name="SignUpButton"
-            Text="Sign up"
+            Text="Register"
             Grid.Row="12"
             Grid.Column="0"
             Clicked="SignUpButton_Clicked"

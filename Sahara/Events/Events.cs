@@ -21,7 +21,8 @@ namespace Sahara
         Logout,
         GetUserData,
         GetItemData,
-        UpdateUserBillingInfo
+        UpdateUserBillingInfo,
+        Response
     }
 
 
@@ -36,39 +37,78 @@ namespace Sahara
     }
 
     [ProtoContract]
+    public class ResponseEvent : BaseEvent
+    {
+        [ProtoMember(1)]
+        public bool EventProcessSuccess { get; set; }
+
+        public ResponseEvent()
+        {
+            Type = EventType.Response;
+        }
+
+        public ResponseEvent(bool processSuccess)
+        {
+            Type = EventType.Response;
+            EventProcessSuccess = processSuccess;
+        }
+    }
+
+
+
+
+    [ProtoContract]
     public class CreateAccountEvent : BaseEvent
     {
         [ProtoMember(1)]
-        public string UserName { get; set; }
-
-        [ProtoMember(2)]
         public string UserEmail { get; set; }
 
-        [ProtoMember(3)]
+        [ProtoMember(2)]
         public string UserPassword { get; set; }
 
-        [ProtoMember(4)]
+        [ProtoMember(3)]
         public string UserRepeatPassword { get; set; }
 
 
         public CreateAccountEvent()
         {
             Type = EventType.CreateAccount;
-            UserName = null;
             UserEmail = null;
             UserPassword = null;
             UserRepeatPassword = null;
         }
 
-        public CreateAccountEvent(string name, string email, string password, string userRepeatPassword)
+        public CreateAccountEvent(string email, string password, string userRepeatPassword)
         {
             Type = EventType.CreateAccount;
-            UserName = name;
             UserEmail = email;
             UserPassword = password;
             UserRepeatPassword = userRepeatPassword;
         }
     }
 
+    [ProtoContract]
+    public class LoginEvent : BaseEvent
+    {
+        [ProtoMember(1)]
+        public string UserEmail { get; set; }
+
+        [ProtoMember(2)]
+        public string UserPassword { get; set; }
+
+        public LoginEvent()
+        {
+            Type = EventType.Login;
+            UserEmail = null;
+            UserPassword = null;
+        }
+
+        public LoginEvent(string email, string password)
+        {
+            Type = EventType.Login;
+            UserEmail = email;
+            UserPassword = password;
+        }
+    }
 }
 

@@ -23,8 +23,7 @@
                 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="80*"/>
                     <ColumnDefinition Width="10*"/>
                 </Grid.ColumnDefinitions>
                 
@@ -33,15 +32,15 @@
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="2"
-                    Grid.Column="0"
+                    Grid.Column="1"
                     Grid.ColumnSpan="4"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     VerticalOptions="Center"
                  />
                 
                 <Entry
                     x:Name="emailEntry"
-                    Text=""
+                    Placeholder="enter your email here"
                     Grid.Row="3"
                     Grid.Column="1"
                     Grid.ColumnSpan="2"
@@ -54,9 +53,9 @@
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="4"
-                    Grid.Column="0"
+                    Grid.Column="1"
                     Grid.ColumnSpan="4"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     VerticalOptions="Center"
                  />
                 
@@ -76,9 +75,9 @@
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="6"
-                    Grid.Column="0"
+                    Grid.Column="1"
                     Grid.ColumnSpan="4"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     VerticalOptions="Center" 
                  />
             
@@ -97,8 +96,8 @@
                     x:Name="CreateAccount_Button"
                     Text="Create Account"
                     Grid.Row="8"
-                    Grid.Column="2"
-                    Grid.ColumnSpan="2"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
                     Clicked="CreateAccountButton_Clicked"
                  />
                 

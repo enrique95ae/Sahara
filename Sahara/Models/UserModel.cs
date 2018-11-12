@@ -8,23 +8,27 @@ namespace Sahara
     {
         public TcpClient TcpClient { get; set; }
         public NetworkStream UserStream { get; set; }
+        public AccountData AccountData { get; set; }
 
-
+        //PERSONAL DATA
+        //public int UserId { get; set; }
         public string UserName { get; set; }
+        //public string UserLastName { get; set; }
         public string UserEmail { get; set; }
         public string UserPassword { get; set; }
+        //public string UserPhoneNumber { get; set; }
 
-        /*  ALL THIS NEEDS TO BE REARANGED FOR COHESION
-        public string UserCreditCardNumber { get; set; }
-        public string UserAddressLine1 { get; set; }
-        public string UserAddressLine2 { get; set; }
-        public int UserZipCode { get; set; }
-        public string UserState { get; set; }
-        public bool UserIsVerified { get; set; }
-        public string UserPhoneNumber { get; set; }
-        public string UserLastName { get; set; }
-        public int UserId { get; set; }
-        */
+        //ADDRESS DATA
+        //public string UserAddressLine1 { get; set; }
+        //public string UserAddressLine2 { get; set; }
+        //public string UserCity { get; set; }
+        //public string UserState { get; set; }
+        //public int UserZipCode { get; set; }
+
+        //PAYMENT DATA
+        //public string UserCreditCardNumber { get; set; }
+        //public int UserCreditCardCVC
+        //public string UserCreditCardExpirationDate { get; set; }
 
         public UserModel()
         {
@@ -33,8 +37,8 @@ namespace Sahara
             UserName = null;
             UserEmail = null;
             UserPassword = null;
-        }
 
+        }
 
         public UserModel(TcpClient tcpClient)
         {
