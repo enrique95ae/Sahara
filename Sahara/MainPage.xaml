@@ -71,9 +71,9 @@
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="110"/>
-                <ColumnDefinition Width="110" />
-                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions> 
@@ -112,33 +112,62 @@
             
         </Grid>
         
-        <Label Text="Based on your history:" />
+        <Label Text="Based on your history:" 
+               TextColor="Black"/>
 
         <ListView
-            x:Name="HistoryListView">
+            x:Name="HistoryListView"
+            HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <ViewCell.ContextActions>
-                            <MenuItem
-                                Text="More"
-                                Clicked="Handle_ItemClick"
-                                CommandParameter="{Binding .}" />
-                        </ViewCell.ContextActions>
                         <ViewCell.View>
-                            <StackLayout
-                                Orientation="Horizontal">
+                            <Grid Padding="3">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="90"/>
+                                    <RowDefinition Height="60"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Grid.RowSpan="2"
+                                    Grid.ColumnSpan="2"
+                                    MinimumHeightRequest="120"
+                                    MinimumWidthRequest="120"
+                                    Source="{Binding ItemImage1}"/>
                                 <Label  
+                                    HorizontalOptions="CenterAndExpand"
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Grid.ColumnSpan="2"
+                                    Font="Bold,20"
+                                    TextColor="Black"
                                     Text="{Binding ItemTitle}"/>
                                 <Label
-                                    Text="Put picture here"/>
-                                <Label
-                                    Text="{Binding ItemPrice}"/>
+                                    TextColor="Black"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    Text="{Binding Path=ItemPrice, StringFormat='${0}'}"
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    FontSize="16"/>
                                 <Button
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    Grid.Row="1"
+                                    Grid.Column="3"
                                     Text="More"
                                     Clicked="Handle_ItemClick"
                                     CommandParameter="{Binding .}" />
-                            </StackLayout>
+                            </Grid>
                         </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>
