@@ -11,11 +11,11 @@ namespace Sahara
         public AccountData AccountData { get; set; }
 
         //PERSONAL DATA
+        public string UserEmail { get; set; }
+        public string UserPassword { get; set; }
         //public int UserId { get; set; }
         public string UserName { get; set; }
         //public string UserLastName { get; set; }
-        public string UserEmail { get; set; }
-        public string UserPassword { get; set; }
         //public string UserPhoneNumber { get; set; }
 
         //ADDRESS DATA
@@ -37,9 +37,9 @@ namespace Sahara
         {
             TcpClient = null;
             UserStream = null;
-            UserName = null;
             UserEmail = null;
             UserPassword = null;
+            UserName = null;
         }
 
         public UserModel(TcpClient tcpClient)
@@ -47,9 +47,9 @@ namespace Sahara
             TcpClient = tcpClient;
             UserStream = TcpClient.GetStream();
 
-            UserName = "testName";
             UserEmail = "testEmail";
             UserPassword = "testPassword";
+            UserName = "testName";
         }
     }
 }
