@@ -22,8 +22,6 @@ namespace Sahara
     //[ProtoInclude(53, typeof(UserData))]
    //[ProtoInclude(54, typeof(ItemData))]
    //[ProtoInclude(55, typeof(BillingInfo))]
-
-
     //[ProtoInclude(56, typeof(PaymentInfo))]
 
     public class BaseEvent
