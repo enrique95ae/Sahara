@@ -4,7 +4,7 @@
              x:Class="Sahara.postedItemsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="You have no posted items! Register an account to be able to sell products."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

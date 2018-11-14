@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
@@ -65,7 +65,8 @@
             
         </Grid>
         
-        <Label Text="Nearby deals:" />
+        <Label Text="Nearby deals:"
+               TextColor="Black"/>
         
 <!-- Grid with the 3 nearby item pictures (buttons) -->
         <Grid HorizontalOptions="CenterAndExpand" Padding="3" ColumnSpacing="10">
@@ -135,39 +136,48 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
                                     <Image
-                                    HorizontalOptions="CenterAndExpand"
-                                    VerticalOptions="CenterAndExpand"
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    Grid.RowSpan="2"
-                                    Grid.ColumnSpan="2"
-                                    MinimumHeightRequest="120"
-                                    MinimumWidthRequest="120"
-                                    Source="{Binding ItemImage1}"/>
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.RowSpan="2"
+                                        Grid.ColumnSpan="2"
+                                        MinimumHeightRequest="120"
+                                        MinimumWidthRequest="120"
+                                        Source="{Binding ItemImage1}"/>
                                     <Label  
-                                    HorizontalOptions="CenterAndExpand"
-                                    Grid.Row="0"
-                                    Grid.Column="2"
-                                    Grid.ColumnSpan="2"
-                                    Font="Bold,20"
-                                    TextColor="Black"
-                                    Text="{Binding ItemTitle}"/>
+                                        HorizontalOptions="CenterAndExpand"
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        Grid.ColumnSpan="2"
+                                        Font="Bold,20"
+                                        TextColor="Black"
+                                        Text="{Binding ItemTitle}"/>
                                     <Label
-                                    TextColor="Black"
-                                    HorizontalOptions="CenterAndExpand"
-                                    VerticalOptions="CenterAndExpand"
-                                    Text="{Binding Path=ItemPrice, StringFormat='${0}'}"
-                                    Grid.Row="1"
-                                    Grid.Column="2"
-                                    FontSize="16"/>
+                                        TextColor="Black"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Text="{Binding Path=ItemPrice, StringFormat='${0}'}"
+                                        Grid.Row="1"
+                                        Grid.Column="2"
+                                        FontSize="16"/>
                                     <Button
-                                    HorizontalOptions="CenterAndExpand"
-                                    VerticalOptions="CenterAndExpand"
-                                    Grid.Row="1"
-                                    Grid.Column="3"
-                                    Text="More"
-                                    Clicked="Handle_ItemClick"
-                                    CommandParameter="{Binding .}" />
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Grid.Row="1"
+                                        Grid.Column="3"
+                                        Text="Info"
+                                        Clicked="Handle_ItemClick"
+                                        CommandParameter="{Binding .}" />
+                                    <Button
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.RowSpan="2"
+                                        Grid.ColumnSpan="2"
+                                        Clicked="Handle_ItemClick"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Transparent"/>
                                 </Grid>
                             </Frame>
                         </ViewCell.View>
