@@ -18,24 +18,19 @@ namespace Sahara
         [ProtoMember(2)]
         public string UserPassword { get; set; }
 
-        [ProtoMember(3)]
-        public string UserRepeatPassword { get; set; }
-
 
         public CreateAccountEvent()
         {
             Type = EventType.CreateAccount;
             UserEmail = null;
             UserPassword = null;
-            UserRepeatPassword = null;
         }
 
-        public CreateAccountEvent(string email, string password, string userRepeatPassword)
+        public CreateAccountEvent(string email, string password)
         {
             Type = EventType.CreateAccount;
             UserEmail = email;
             UserPassword = password;
-            UserRepeatPassword = userRepeatPassword;
         }
     }
 }

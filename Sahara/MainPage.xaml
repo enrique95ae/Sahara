@@ -46,7 +46,7 @@
             
             <Button 
                 x:Name="shoppingCartButton"
-                Text=""
+                Text="SC"
                 Grid.Row="0"
                 Grid.Column="1"
                 Clicked="shoppingCartButton_Clicked" 
@@ -56,7 +56,7 @@
             
             <Button
                 x:Name="profileButton"
-                Text=""
+                Text="P"
                 Grid.Row="0"
                 Grid.Column="2"
                 Clicked="profileButton_Clicked"

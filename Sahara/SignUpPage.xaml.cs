@@ -28,7 +28,7 @@ namespace Sahara
         async void CreateAccountButton_Clicked(object sender, EventArgs e)
         {
             //Creating an instance of an object of type CreateAccountEvent to store the data from the Text Entries from the SignUpPage of the GUI.
-            var newAccountInfo = new CreateAccountEvent(emailEntry.Text, passwordEntry.Text, RepeatPasswordEntry.Text);
+            var newAccountInfo = new CreateAccountEvent(emailEntry.Text, passwordEntry.Text);
 
             if(passwordEntry.Text == RepeatPasswordEntry.Text)
             {
