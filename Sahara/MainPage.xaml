@@ -122,18 +122,19 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <Grid Padding="3">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="90"/>
-                                    <RowDefinition Height="60"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Image
+                            <Frame Padding="2" Margin="0,3,0,3" HeightRequest="150">
+                                <Grid Padding="3">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="90"/>
+                                        <RowDefinition Height="60"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                     Grid.Row="0"
@@ -143,7 +144,7 @@
                                     MinimumHeightRequest="120"
                                     MinimumWidthRequest="120"
                                     Source="{Binding ItemImage1}"/>
-                                <Label  
+                                    <Label  
                                     HorizontalOptions="CenterAndExpand"
                                     Grid.Row="0"
                                     Grid.Column="2"
@@ -151,7 +152,7 @@
                                     Font="Bold,20"
                                     TextColor="Black"
                                     Text="{Binding ItemTitle}"/>
-                                <Label
+                                    <Label
                                     TextColor="Black"
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
@@ -159,7 +160,7 @@
                                     Grid.Row="1"
                                     Grid.Column="2"
                                     FontSize="16"/>
-                                <Button
+                                    <Button
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                     Grid.Row="1"
@@ -167,7 +168,8 @@
                                     Text="More"
                                     Clicked="Handle_ItemClick"
                                     CommandParameter="{Binding .}" />
-                            </Grid>
+                                </Grid>
+                            </Frame>
                         </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>

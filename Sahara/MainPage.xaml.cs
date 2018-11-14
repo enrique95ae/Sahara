@@ -54,6 +54,11 @@ namespace Sahara
                 ItemDescription = "Wow it's candy.",
                 ItemPrice = 99.99,
                 ItemImage1 = "https://nuts.com/images/auto/801x534/assets/1c99a8a7052a8cb3.jpg",
+                ItemImage2 = "https://c1.staticflickr.com/6/5122/5364863258_fddcb4f13d_b.jpg",
+                ItemImage3 = "https://c1.staticflickr.com/6/5325/6949012298_2764231917_z.jpg",
+                ItemImage4 = "https://pbs.twimg.com/profile_images/438491912102621184/dN0Y949g.jpeg",
+                ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
+                ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
             var item2 = new ItemModel
             {

@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Sahara.ItemPage">
     
-    <ContentPage.Content>
-    </ContentPage.Content>
     
     <Grid Padding="5" ColumnSpacing="8" RowSpacing="8">
         <Grid.RowDefinitions>
@@ -20,9 +18,9 @@
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
         <!-- Title -->
@@ -45,58 +43,46 @@
             FontAttributes="Bold"
         />
 
-        <Button 
-            Text="PIC1"
+        <Image
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Grid.RowSpan="2"
-            BackgroundColor="Purple"
-            TextColor="White"
+            Source="{Binding ItemImage1}"
             MinimumWidthRequest="150"
             MinimumHeightRequest="150"
         />
         
-        <Button
-            Text="PIC2"
+        <Image
             Grid.Row="1"
             Grid.Column="2"
-            BackgroundColor="Blue"
-            TextColor="White"
             MinimumWidthRequest="75"
             MinimumHeightRequest="75"
+            Source="{Binding ItemImage2}"
          />
         
-         <Button
-            Text="PIC3"
+         <Image
             Grid.Row="2"
             Grid.Column="2"
-            BackgroundColor="Red"
-            TextColor="White"
+            Source="{Binding ItemImage3}"
          />
         
-        <Button
-            Text="PIC4"
+        <Image
             Grid.Row="3"
             Grid.Column="0"
-            BackgroundColor="Green"
-            TextColor="White"
+            Source="{Binding ItemImage4}"
          />
    
-        <Button
-            Text="PIC5"
+        <Image
             Grid.Row="3"
             Grid.Column="1"
-            BackgroundColor="Teal"
-            TextColor="White"
+            Source="{Binding ItemImage5}"
          />
         
-         <Button
-            Text="PIC6"
+         <Image
             Grid.Row="3"
             Grid.Column="2"
-            BackgroundColor="Olive"
-            TextColor="White"
+            Source="{Binding ItemImage6}"
          />
         
         <Label 
