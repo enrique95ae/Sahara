@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 
+/*
+ * Local Item Model for Database references
+ * Contains item information variables and images
+ * Fixed number of main display images and a secondary list
+ */
+
 namespace Sahara
 {
     public class ItemModel

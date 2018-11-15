@@ -5,7 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/*
+ * User Data Class for client to make server calls
+ * Grabs user information
+ */
 
 namespace Sahara
 {

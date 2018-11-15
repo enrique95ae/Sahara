@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Net.Sockets;
 
+/*
+ * Local User Model for Database references
+ * Default and connection constructors
+ * Additional variables to be implemented as server and database relationship is added
+ */
 
 namespace Sahara
 {

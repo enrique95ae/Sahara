@@ -5,7 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/*
+ * Create Account event
+ * Makes server call to place information in database
+ * as long as client checks are valid
+ */
 
 namespace Sahara
 {

@@ -5,6 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Event process class for result of other events
+ * Verifies success of events for client
+ */
+
 namespace Sahara
 {
     [ProtoContract]
@@ -22,7 +27,7 @@ namespace Sahara
         {
             Type = EventType.Response;
             EventProcessSuccess = processSuccess;
-            //EventProcessSuccess = true;
+            //EventProcessSuccess = true;           //debug
         }
     }
 }

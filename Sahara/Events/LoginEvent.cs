@@ -5,6 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Login event called for user login
+ * Passes event to event handler to make server call
+ * and check database
+ */
+
 namespace Sahara
 {
     [ProtoContract]
