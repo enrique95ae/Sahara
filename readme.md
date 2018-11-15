@@ -13,5 +13,5 @@ Architectural Document:   https://docs.google.com/document/d/1Xv536ZjM3DYJOGxMXk
 
 Group members:  
 Enrique Alonso Esposito. </br>
-Aaron Brunette. </br>
-Andrew Hawn. </br>
+Aaron Brunette.  https://github.com/abrunette </br>
+Andrew Hawn.  https://github.com/Blargyn</br>
