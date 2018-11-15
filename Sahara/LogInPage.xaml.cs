@@ -29,14 +29,14 @@ namespace Sahara
         {
             if (!Globals.UserConnected)
             {
-                var tcpClient = new TcpClient("127.0.0.1", 27015);
-                _userData = new UserModel(tcpClient);
+                var tcpClient = new TcpClient("127.0.0.1", 27015); //server location
+                _userData = new UserModel(tcpClient); //creates model for server use
                 Globals.UserConnected = true;
             }
                 var loginEvent = new LoginEvent(emailEntry.Text, passwordEntry.Text);
 
 
-                Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128);
+                Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128); //allows for communication of data
 
                 var responseData = Serializer.DeserializeWithLengthPrefix<ResponseEvent>(_userData.UserStream, PrefixStyle.Base128);
                 

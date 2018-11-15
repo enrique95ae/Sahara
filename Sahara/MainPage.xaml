@@ -115,7 +115,7 @@
         
         <Label Text="Based on your history:" 
                TextColor="Black"/>
-
+        <!-- Fills a list with products. Will be updated to be a genuine history -->
         <ListView
             x:Name="HistoryListView"
             HasUnevenRows="True">

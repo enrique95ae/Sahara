@@ -12,7 +12,7 @@ namespace Sahara
             InitializeComponent();
         }
 
-        public ItemPage(ItemModel item)
+        public ItemPage(ItemModel item) //Allows use of the observable collection to fill ItemPage items
         {
             InitializeComponent();
 

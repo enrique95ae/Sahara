@@ -17,7 +17,7 @@ namespace Sahara
             InitializeComponent();
         }
 
-        public SignUpPage(UserModel userData)
+        public SignUpPage(UserModel userData) //packages data to into model to be sent
         {
             InitializeComponent();
             _userData = userData;
