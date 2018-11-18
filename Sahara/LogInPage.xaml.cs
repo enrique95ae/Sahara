@@ -10,6 +10,7 @@ namespace Sahara
     public partial class logInPage : ContentPage
     {
         private UserModel _userData = new UserModel();
+        private readonly Object _lock = new object();
 
         //private bool DEBUG_MODE = true;
 
@@ -35,8 +36,11 @@ namespace Sahara
             }
                 var loginEvent = new LoginEvent(emailEntry.Text, passwordEntry.Text);
 
-
+            lock(_lock)
+            {
                 Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128);
+            }
+              
 
                 var responseData = Serializer.DeserializeWithLengthPrefix<ResponseEvent>(_userData.UserStream, PrefixStyle.Base128);
                 
