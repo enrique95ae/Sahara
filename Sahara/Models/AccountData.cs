@@ -1,6 +1,11 @@
 ﻿using System;
 using ProtoBuf;
 
+/* Should this be in the Events folder?
+ * Account Data Class for client event to make server calls
+ * Grabs account validation information (email/password)
+ */
+
 namespace Sahara
 {
     [ProtoContract]

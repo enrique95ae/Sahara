@@ -1,6 +1,8 @@
 ﻿using System;
 using ProtoBuf;
 
+//Base Client event class
+
 namespace Sahara
 {
     public enum EventType

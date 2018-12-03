@@ -78,9 +78,9 @@ namespace Sahara
         {
             await Navigation.PushAsync(new ItemPage());
         }
-        private void PopulateItemListView()
+        private void PopulateItemListView() //the product list that everything else pulls from, will be received from server
         {
-            var itemList = new ObservableCollection<ItemModel>();
+            var itemList = new ObservableCollection<ItemModel>(); //filled with placeholder items
 
 
 
@@ -127,7 +127,7 @@ namespace Sahara
             HistoryListView.ItemsSource = itemList;
         }
 
-        void Handle_ItemClick(object sender, System.EventArgs e)
+        void Handle_ItemClick(object sender, System.EventArgs e) //Navigates to a page with more detail
         {
             var menuItem = (Button)sender;
             var item = (ItemModel)menuItem.CommandParameter;

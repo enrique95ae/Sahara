@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Sahara
 {
-    public partial class profilePage : ContentPage
+    public partial class profilePage : ContentPage //lots of placeholder buttons that navigate to dead pages. will be updated
     {
         public profilePage()
         {
