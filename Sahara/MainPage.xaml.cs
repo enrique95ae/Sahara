@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Net.Sockets;
 
 
 
@@ -18,6 +19,40 @@ namespace Sahara
             InitializeComponent();
             PopulateItemListView();
         }
+
+        //public static void CreateConnection()
+        //{
+        //    try
+        //    {
+        //        TcpClient tcpConnection = new TcpClient();
+        //        Console.WriteLine("Connecting... \n");
+
+        //        tcpConnection.Connect("127.0.0.1", 27015);
+
+        //        Console.WriteLine("Connected!   \n");
+
+
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine("ERROR: " + e.StackTrace);
+        //    }
+        //}
+
+
+        /*RETRIEVE ITEM DATA FROM SERVER HERE
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        *
+        */
+
+
 
         private async void shoppingCartButton_Clicked(object sender, EventArgs e)
         {
@@ -46,6 +81,14 @@ namespace Sahara
         private void PopulateItemListView()
         {
             var itemList = new ObservableCollection<ItemModel>();
+
+
+
+
+
+
+
+
 
             var item1 = new ItemModel
             {

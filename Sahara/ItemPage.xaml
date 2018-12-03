@@ -135,6 +135,7 @@
             TextColor="White"
             FontSize="Large"
             FontAttributes="Bold"
+            Clicked="AddToCartButton_Clicked"
         />
  
     </Grid>    

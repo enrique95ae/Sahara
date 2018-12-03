@@ -136,6 +136,7 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
                                     <Image
+                                        x:Name="Image"
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="CenterAndExpand"
                                         Grid.Row="0"
@@ -146,6 +147,7 @@
                                         MinimumWidthRequest="120"
                                         Source="{Binding ItemImage1}"/>
                                     <Label  
+                                        x:Name="Title_Label"
                                         HorizontalOptions="CenterAndExpand"
                                         Grid.Row="0"
                                         Grid.Column="2"
@@ -154,6 +156,7 @@
                                         TextColor="Black"
                                         Text="{Binding ItemTitle}"/>
                                     <Label
+                                        x:Name="Price_Label"
                                         TextColor="Black"
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="CenterAndExpand"
@@ -162,6 +165,7 @@
                                         Grid.Column="2"
                                         FontSize="16"/>
                                     <Button
+                                        x:Name="ClickOnItem"
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="CenterAndExpand"
                                         Grid.Row="1"
@@ -170,6 +174,7 @@
                                         Clicked="Handle_ItemClick"
                                         CommandParameter="{Binding .}" />
                                     <Button
+                                        x:Name="ClickOnItem2"
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         Grid.RowSpan="2"

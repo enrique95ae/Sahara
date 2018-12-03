@@ -18,5 +18,10 @@ namespace Sahara
 
             BindingContext = item;
         }
+
+        private async void AddToCartButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
