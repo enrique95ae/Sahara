@@ -1,6 +1,6 @@
 Sahara Mobile Shopping Application:  
 
-This is the github for our CS443 (Software Engineering) project.  
+This is the repository for our CS443 (Software Engineering) project.  
 
 This project is being developed using Xamarin.
 
