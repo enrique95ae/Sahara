@@ -130,7 +130,33 @@
             Grid.Row="6"
             Grid.Column="1"
             Grid.ColumnSpan="2"
-         />                
-        
+         />
+
+        <ListView
+            x:Name="PersonalInfoListView"
+            Grid.Row="8"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label
+                                    Text="{Binding FName}"/>
+                                <Label
+                                    Text="{Binding LName}"/>
+                                <Label
+                                    Text="{Binding Email}" />
+                                <Label
+                                    Text="{Binding PhoneNum}"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>  
 </ContentPage>

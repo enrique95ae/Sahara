@@ -37,6 +37,19 @@ namespace Sahara
             }
         }
 
+        static LocalDatabase database;
+        public static LocalDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new LocalDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ItemSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
         protected override void OnStart()
         {
             CreateConnection();
