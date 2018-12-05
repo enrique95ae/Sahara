@@ -36,6 +36,7 @@ namespace Sahara
                 ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg"
             };
 
+            /*
             var item2 = new ItemModel
             {
                 ItemId = 12,
@@ -62,11 +63,12 @@ namespace Sahara
                 ItemPrice = 2.99,
                 ItemImage1 = "https://upload.wikimedia.org/wikipedia/commons/0/06/Hostess_twinkies_tweaked.jpg"
             };
+            */
 
             itemList.Add(item1);
-            itemList.Add(item2);
-            itemList.Add(item3);
-            itemList.Add(item4);
+            //itemList.Add(item2);
+            //itemList.Add(item3);
+            //itemList.Add(item4);
 
             SearchListView.ItemsSource = itemList;
         }
