@@ -22,6 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="profilePic.jpg" />
+    <None Remove="shoppingCart.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SecuritySettingsPage.xaml.cs">
