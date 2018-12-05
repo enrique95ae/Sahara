@@ -37,10 +37,10 @@ namespace Sahara
                 var loginEvent = new LoginEvent(emailEntry.Text, passwordEntry.Text);
 
 
-            lock(_lock)
-            {
-                Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128);
-            }
+            //lock(_lock)
+            //{
+            //    Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128);
+            //}
               
                 Serializer.SerializeWithLengthPrefix(_userData.UserStream, loginEvent, PrefixStyle.Base128); //allows for communication of data
 
