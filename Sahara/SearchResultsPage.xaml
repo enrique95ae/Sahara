@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sahara.SearchResultsPage">
+  <ContentView.Content>
+      <StackLayout>
+            <Label Text="Search results:" 
+               TextColor="Black"/>
+          
+            <ListView
+            x:Name="SearchListView"
+            HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame Padding="2" Margin="0,3,0,3" HeightRequest="150">
+                                    <Grid Padding="3">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="90"/>
+                                            <RowDefinition Height="60"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image
+                                        x:Name="Image"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.RowSpan="2"
+                                        Grid.ColumnSpan="2"
+                                        MinimumHeightRequest="120"
+                                        MinimumWidthRequest="120"
+                                        Source="{Binding ItemImage1}"/>
+                                        <Label  
+                                        x:Name="Title_Label"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        Grid.ColumnSpan="2"
+                                        Font="Bold,20"
+                                        TextColor="Black"
+                                        Text="{Binding ItemTitle}"/>
+                                        <Label
+                                        x:Name="Price_Label"
+                                        TextColor="Black"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Text="{Binding Path=ItemPrice, StringFormat='${0}'}"
+                                        Grid.Row="1"
+                                        Grid.Column="2"
+                                        FontSize="16"/>
+                                        <Button
+                                        x:Name="ClickOnItem"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Grid.Row="1"
+                                        Grid.Column="3"
+                                        Text="Info"
+                                        Clicked="Handle_ItemClick"
+                                        CommandParameter="{Binding .}" />
+                                        <Button
+                                        x:Name="ClickOnItem2"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.RowSpan="2"
+                                        Grid.ColumnSpan="2"
+                                        Clicked="Handle_ItemClick"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Transparent"/>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
