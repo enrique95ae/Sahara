@@ -36,7 +36,37 @@ namespace Sahara
                 ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg"
             };
 
+            var item2 = new ItemModel
+            {
+                ItemId = 12,
+                ItemTitle = "Smug",
+                ItemDescription = "You know it...",
+                ItemPrice = 0.00,
+                ItemImage1 = "https://i.imgur.com/DdgoMGe.png"
+            };
+
+            var item3 = new ItemModel
+            {
+                ItemId = 13,
+                ItemTitle = "A Doctor",
+                ItemDescription = "A real doctor.",
+                ItemPrice = 1000.00,
+                ItemImage1 = "https://www.resolvingdiscoverydisputes.com/wp-content/uploads/sites/95/2015/01/Doctor.jpg"
+            };
+
+            var item4 = new ItemModel
+            {
+                ItemId = 14,
+                ItemTitle = "Twinkies",
+                ItemDescription = "Yellow bars.",
+                ItemPrice = 2.99,
+                ItemImage1 = "https://upload.wikimedia.org/wikipedia/commons/0/06/Hostess_twinkies_tweaked.jpg"
+            };
+
             itemList.Add(item1);
+            itemList.Add(item2);
+            itemList.Add(item3);
+            itemList.Add(item4);
 
             SearchListView.ItemsSource = itemList;
         }
