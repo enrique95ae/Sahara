@@ -21,7 +21,7 @@ namespace Sahara
 
         private async void AddToCartButton_Clicked(object sender, EventArgs e)
         {
-            
+            await DisplayAlert("SUCCESS", "Your item has been added to the shopping cart.", "OK");
         }
     }
 }

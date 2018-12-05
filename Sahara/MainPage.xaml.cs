@@ -160,11 +160,11 @@ namespace Sahara
                 ItemDescription = "You are bad at MMORPGs? you can get this and get it fixed. Andrew got it and got to Diamond in LoL.",
                 ItemPrice = 59.99,
                 ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/41ecZxB3MoL._SX425_.jpg",
-                ItemImage2 = "",
-                ItemImage3 = "",
-                ItemImage4 = "",
-                ItemImage5 = "",
-                ItemImage6 = "",
+                ItemImage2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdoXeX_t3_7ENIty6s587corQ76JNkD_3pke-GBMGZvJnysOeFnA",
+                ItemImage3 = "https://images.techhive.com/images/article/2014/09/razer-naga_gal-100413866-large.jpg",
+                ItemImage4 = "https://cdn.nexternal.com/tecb/images/razernagammo_m.jpg",
+                ItemImage5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCHjjVq4eFzP-ZKZLAj3OhiVt2s9IpZB5IF-DZyjYcFDmsSw",
+                ItemImage6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7djWmU-BclsZTmpCPQ9hGm8LupBmSzD5K7fFtUJvzSv1wfxK8",
             };
 
             
@@ -257,7 +257,6 @@ namespace Sahara
                 ItemDescription = "For throwing legendary parties.",
                 ItemPrice = 999000.00,
                 ItemImage1 = "https://www.powerandmotoryacht.com/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Ch_700%2Cq_auto:good%2Cw_700/MTUwMTAyOTgzMTc5NTEwODQ2/hatteras100_prmjpg-promo-image.jpg",
-                //ItemImage2 = "",
             };
 
             var nearbyItem3 = new ItemModel
@@ -268,7 +267,6 @@ namespace Sahara
                     "contions",
                 ItemPrice = 29.00,
                 ItemImage1 = "https://rlv.zcache.com/reddit_alien_t_shirt-rc1ed25c8ba2f4b36a9179090d42439c1_k2gl9_307.jpg",
-                //ItemImage2 = "",
             };
 
 
@@ -301,6 +299,20 @@ namespace Sahara
                  "contions",
                 ItemPrice = 3799.99,
                 ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/51fxFwONaIL.jpg",
+                ItemImage2 = "https://i5.walmartimages.com/asr/013696c9-6f7b-4bf9-85e4-1552551f77c9_1.5b9c045db8c9b56033b6000e71acc4ec.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
+                ItemImage3 = "https://app.skufetch.com/images.tmp/Royalbaby_Jenny_Princess_Pink_Girl_s_Bike_with_Training_Whee_4846_0_res.jpeg",
+                ItemImage4 = "http://www.ladypoolcycles.co.uk/image/cache/data/Moore%20Large/Cuda%2015/blox-14-pink-1200x1200.jpg",
+                ItemImage5 = "https://image.shutterstock.com/image-vector/kids-bicycle-girl-vector-illustration-260nw-95979451.jpg",
+                ItemImage6 = "https://i.ebayimg.com/images/g/~AcAAOSwq1JZJb1M/s-l300.jpg",
+            };
+
+            var nearbyItem2 = new ItemModel
+            {
+                ItemId = 6,
+                ItemTitle = "Luxury Yatch",
+                ItemDescription = "For throwing legendary parties.",
+                ItemPrice = 999000.00,
+                ItemImage1 = "https://www.powerandmotoryacht.com/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Ch_700%2Cq_auto:good%2Cw_700/MTUwMTAyOTgzMTc5NTEwODQ2/hatteras100_prmjpg-promo-image.jpg",
                 ItemImage2 = "https://i5.walmartimages.com/asr/013696c9-6f7b-4bf9-85e4-1552551f77c9_1.5b9c045db8c9b56033b6000e71acc4ec.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
                 ItemImage3 = "https://app.skufetch.com/images.tmp/Royalbaby_Jenny_Princess_Pink_Girl_s_Bike_with_Training_Whee_4846_0_res.jpeg",
                 ItemImage4 = "http://www.ladypoolcycles.co.uk/image/cache/data/Moore%20Large/Cuda%2015/blox-14-pink-1200x1200.jpg",
