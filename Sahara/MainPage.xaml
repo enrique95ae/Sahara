@@ -92,11 +92,12 @@
             <Button
                 x:Name="item1Button"
                 Text="ITEM1"
-                Clicked="item1Button_Clicked"
+                Clicked="Handle_NearbyItem1Click"
                 Grid.Row="0"
                 Grid.Column="0"
                 BackgroundColor="Transparent"
                 TextColor="Transparent"
+                
              />  
             
             <Image
