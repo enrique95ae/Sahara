@@ -33,7 +33,12 @@ namespace Sahara
                 ItemTitle = "Snickers",
                 ItemDescription = "Brown bars.",
                 ItemPrice = 0.99,
-                ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg"
+                ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg",
+                ItemImage2 = "https://images-na.ssl-images-amazon.com/images/I/51bnA3AS%2BML.jpg",
+                ItemImage3 = "http://cdn.shopify.com/s/files/1/0004/8132/9204/products/snickers-almond-box2_1024x1024.jpg?v=1532192681",
+                ItemImage4 = "https://thumbor.thedailymeal.com/Er8yBLt8qW5toMFIiTJMkx_KN-k=/840x565/filters:focal(595x384:596x385)/https://www.thedailymeal.com/sites/default/files/2017/12/06/copy/01-snicker.jpg",
+                ItemImage5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsKCCYpzXieCsuCunEUdzF_iQqRoa3E_Gg6ve3dLWnb3A2OzMYQ",
+                ItemImage6 = "https://images-na.ssl-images-amazon.com/images/I/71BobAGDWuL._SL1500_.jpg",
             };
 
             var item2 = new ItemModel
@@ -64,9 +69,9 @@ namespace Sahara
             };
 
             itemList.Add(item1);
-            itemList.Add(item2);
-            itemList.Add(item3);
-            itemList.Add(item4);
+           // itemList.Add(item2);
+           // itemList.Add(item3);
+           // itemList.Add(item4);
 
             SearchListView.ItemsSource = itemList;
         }
