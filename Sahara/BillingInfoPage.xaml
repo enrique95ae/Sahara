@@ -22,9 +22,7 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
+            <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -36,7 +34,7 @@
             
         </Grid.ColumnDefinitions>
         
-        <Label
+        <Entry
             Text="Billing Information:"
             Grid.Row="0"
             Grid.Column="0"
@@ -88,7 +86,7 @@
         
         <Entry
             x:Name="addressLine1Entry"
-            Text=""          
+            Text="{Binding Address1}"          
             Grid.Row="3"
             Grid.Column="0"
             Grid.ColumnSpan="3"
@@ -96,7 +94,7 @@
         
         <Entry
             x:Name="addressLine2Entry"
-            Text=""          
+            Text="{Binding Address2}"          
             Grid.Row="5"
             Grid.Column="0"
             Grid.ColumnSpan="3"
@@ -104,7 +102,7 @@
         
         <Entry
             x:Name="cityEntry"
-            Text=""          
+            Text="{Binding City}"          
             Grid.Row="7"
             Grid.Column="0"
             Grid.ColumnSpan="3"
@@ -112,7 +110,7 @@
         
         <Entry
             x:Name="stateEntry"
-            Text=""          
+            Text="{Binding State}"          
             Grid.Row="9"
             Grid.Column="0"
             Grid.ColumnSpan="3"
@@ -120,7 +118,7 @@
         
         <Entry
             x:Name="zipEntry"
-            Text=""          
+            Text="{Binding Zip}"          
             Grid.Row="11"
             Grid.Column="0"
             Grid.ColumnSpan="3"
@@ -128,12 +126,39 @@
         
         <Button
             x:Name="saveBillingInformationButton"
-            Grid.Row="15"
+            Grid.Row="12"
             Grid.Column="4"
             Text="Save" 
             HorizontalOptions="Start"
             Clicked="saveBillingInformationButton_Clicked"
-         /> 
+         />
+        <ListView
+            x:Name="BillingListView"
+            Grid.Row="13"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label
+                                    Text="{Binding Address1}"/>
+                                <Label
+                                    Text="{Binding Address2}"/>
+                                <Label
+                                    Text="{Binding City}" />
+                                <Label
+                                    Text="{Binding State}"/>
+                                <Label
+                                    Text="{Binding Zip}"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
          
     </Grid>
 </ContentPage>

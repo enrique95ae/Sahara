@@ -41,6 +41,7 @@ namespace Sahara
                 ItemImage6 = "https://images-na.ssl-images-amazon.com/images/I/71BobAGDWuL._SL1500_.jpg",
             };
 
+            /*
             var item2 = new ItemModel
             {
                 ItemId = 12,
@@ -67,11 +68,13 @@ namespace Sahara
                 ItemPrice = 2.99,
                 ItemImage1 = "https://upload.wikimedia.org/wikipedia/commons/0/06/Hostess_twinkies_tweaked.jpg"
             };
+            */
 
             itemList.Add(item1);
            // itemList.Add(item2);
            // itemList.Add(item3);
            // itemList.Add(item4);
+
 
             SearchListView.ItemsSource = itemList;
         }
