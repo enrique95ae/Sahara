@@ -18,6 +18,7 @@
     <Compile Remove="connection.cs" />
     <Compile Remove="itemClass.cs" />
     <Compile Remove="SearchResultsPage.xaml.cs" />
+    <Compile Remove="searchPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="profilePic.jpg" />
@@ -71,5 +72,8 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="securitySettingsPage.xaml.cs">
       <DependentUpon>SecuritySettingsPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="searchPage.xaml" />
   </ItemGroup>
 </Project>
