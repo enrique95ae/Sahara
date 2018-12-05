@@ -19,9 +19,11 @@
     <Compile Remove="connection.cs" />
     <Compile Remove="itemClass.cs" />
     <Compile Remove="SearchResultsPage.xaml.cs" />
+    <Compile Remove="searchPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="profilePic.jpg" />
+    <None Remove="shoppingCart.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SecuritySettingsPage.xaml.cs">
@@ -72,5 +74,13 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="securitySettingsPage.xaml.cs">
       <DependentUpon>SecuritySettingsPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="searchPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="SearchResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
