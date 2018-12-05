@@ -44,10 +44,9 @@
                                 <ViewCell.View>
                                     <Grid HorizontalOptions="Start" VerticalOptions="Start" Padding="10">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="30*"/>
-                                            <RowDefinition Height="30*"/>
-                                            <RowDefinition Height="30*"/>
-                                        </Grid.RowDefinitions>
+                                            <RowDefinition Height="85*"/>
+                                        <RowDefinition Height="65*"/>
+                                    </Grid.RowDefinitions>
                                     
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="20*"/>
@@ -57,7 +56,7 @@
                                         </Grid.ColumnDefinitions>
                                     
                                         <Image
-                                            Source="{Binding ItemImage}"
+                                            Source="{Binding ItemImage1}"
                                             Grid.Column="0"
                                             Grid.Row="0"
                                             Grid.ColumnSpan="2"
@@ -67,7 +66,7 @@
                                         />
                                     
                                         <Label
-                                            Text="{Binding ItemName}"
+                                            Text="{Binding ItemTitle}"
                                             Grid.Row="0"
                                             Grid.Column="2"
                                             VerticalOptions="Start"
@@ -86,10 +85,11 @@
                                             x:Name="deleteItem"
                                             Text="Delete"
                                             Grid.Column="3"
-                                            Grid.Row="1"
+                                            Grid.Row="0"
+                                            Grid.RowSpan="2"
                                             TextColor="Red"
-                                            VerticalOptions="End"
-                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="EndAndExpand"
                                         />
 
                                     </Grid>
@@ -100,7 +100,7 @@
                 </ListView>
         
                 <Label
-                    Text="Total: "
+                    Text="Total: 4068.76"
                     Grid.Column="0"
                     Grid.Row="3"
                     FontAttributes="Bold"

@@ -112,8 +112,42 @@ namespace Sahara
         {
             var itemList = new ObservableCollection<ItemModel>(); //filled with placeholder items
 
-
             var item1 = new ItemModel
+            {
+                ItemId = 4,
+                ItemTitle = "Literally Asparagus",
+                ItemDescription = "There's festivals n stuff for this.",
+                ItemPrice = 5.99,
+                ItemImage1 = "https://hips.hearstapps.com/del.h-cdn.co/assets/18/09/2048x1024/landscape-1519653347-delish-roasted-asparagus-1.jpg?resize=1200:*",
+            };
+            var item2 = new ItemModel
+            {
+                ItemId = 4,
+                ItemTitle = "Hardcore Mountain Bike",
+                ItemDescription = "For grizzled veterans and manly men.",
+                ItemPrice = 3999.99,
+                ItemImage1 = "https://womencyclists.files.wordpress.com/2012/10/girl-bike.jpg",
+            };
+            var item3 = new ItemModel
+            {
+                ItemId = 4,
+                ItemTitle = "Hype Stuff",
+                ItemDescription = "Get swole, bruh.",
+                ItemPrice = 2.79,
+                ItemImage1 = "https://cdn.shopify.com/s/files/1/0944/0726/products/VPX-Bang-Energy-Drinks_2000x.jpg?v=1543424446",
+            };
+            var item4 = new ItemModel
+            {
+                ItemId = 4,
+                ItemTitle = "Buttons To Press",
+                ItemDescription = "We like buttons.",
+                ItemPrice = 59.99,
+                ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/41ecZxB3MoL._SX425_.jpg",
+            };
+
+            
+
+            var item5 = new ItemModel
             {
                 ItemId = 1,
                 ItemTitle = "Skittles",
@@ -126,7 +160,7 @@ namespace Sahara
                 ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
                 ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
-            var item2 = new ItemModel
+            var item6 = new ItemModel
             {
                 ItemId = 2,
                 ItemTitle = "Skittles But More",
@@ -139,7 +173,7 @@ namespace Sahara
                 ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
                 ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
-            var item3 = new ItemModel
+            var item7 = new ItemModel
             {
                 ItemId = 3,
                 ItemTitle = "Scrolling Test. Skittles are average at best.",
@@ -153,7 +187,7 @@ namespace Sahara
                 ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
 
-            var item4 = new ItemModel
+            var item8 = new ItemModel
             {
                 ItemId = 4,
                 ItemTitle = "Not skittles!",
@@ -172,6 +206,10 @@ namespace Sahara
             itemList.Add(item2);
             itemList.Add(item3);
             itemList.Add(item4);
+            itemList.Add(item5);
+            itemList.Add(item6);
+            itemList.Add(item7);
+            itemList.Add(item8);
 
             HistoryListView.ItemsSource = itemList;
         }
