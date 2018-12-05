@@ -132,7 +132,12 @@ namespace Sahara
                 ItemTitle = "Skittles But More",
                 ItemDescription = "Wow it's more candy. Like holy crap that's a lotta skittles.",
                 ItemPrice = 999.99,
-                ItemImage1 = "http://images.tritondigitalcms.com/6616/sites/115/2018/01/19070509/skittles-300x168.jpg"
+                ItemImage1 = "http://images.tritondigitalcms.com/6616/sites/115/2018/01/19070509/skittles-300x168.jpg",
+                ItemImage2 = "https://c1.staticflickr.com/6/5122/5364863258_fddcb4f13d_b.jpg",
+                ItemImage3 = "https://c1.staticflickr.com/6/5325/6949012298_2764231917_z.jpg",
+                ItemImage4 = "https://pbs.twimg.com/profile_images/438491912102621184/dN0Y949g.jpeg",
+                ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
+                ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
             var item3 = new ItemModel
             {
@@ -141,6 +146,11 @@ namespace Sahara
                 ItemDescription = "God these look disgusting.",
                 ItemPrice = 0.99,
                 ItemImage1 = "http://www.browniesfordays.com/wp-content/uploads/SKITTLES-BROWNIES-How-To-Make-Rainbow-Candy-Skittles-Brownies.jpg",
+                ItemImage2 = "https://c1.staticflickr.com/6/5122/5364863258_fddcb4f13d_b.jpg",
+                ItemImage3 = "https://c1.staticflickr.com/6/5325/6949012298_2764231917_z.jpg",
+                ItemImage4 = "https://pbs.twimg.com/profile_images/438491912102621184/dN0Y949g.jpeg",
+                ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
+                ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
 
             var item4 = new ItemModel
@@ -150,6 +160,12 @@ namespace Sahara
                 ItemDescription = "m&m are much better.",
                 ItemPrice = 0.99,
                 ItemImage1 = "https://cdn2.bigcommerce.com/server5100/h711h5/products/222/images/2648/mm_peanuts_loose__43589.1520041155.1280.1280.jpg?c=2",
+                //ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/51fxFwONaIL.jpg",
+                ItemImage2 = "https://c1.staticflickr.com/6/5122/5364863258_fddcb4f13d_b.jpg",
+                ItemImage3 = "https://c1.staticflickr.com/6/5325/6949012298_2764231917_z.jpg",
+                ItemImage4 = "https://pbs.twimg.com/profile_images/438491912102621184/dN0Y949g.jpeg",
+                ItemImage5 = "https://pre00.deviantart.net/c181/th/pre/i/2017/011/2/4/yellow_skittle_for_cole2006_by_thesparkedflame-dav2mh1.png",
+                ItemImage6 = "https://www.candywarehouse.com/assets/item/regular/brown-mms-candy-127627.jpg",
             };
 
             itemList.Add(item1);
@@ -158,6 +174,54 @@ namespace Sahara
             itemList.Add(item4);
 
             HistoryListView.ItemsSource = itemList;
+        }
+
+        private void PopulateItemNearby()
+        {
+            var nearbyItemList = new ObservableCollection<ItemModel>();
+
+            var nearbyItem1 = new ItemModel
+            {
+                ItemId = 5,
+                ItemTitle = "Hardcore Mountain Bike",
+                ItemDescription = "Specially designed for the hardest trails. Our team of engineers put a lot of effort into making the perfect mountain bike for all the " +
+                    "contions",
+                ItemPrice = 3799.99,
+                ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg",
+                //ItemImage2 = "",
+            };
+
+            var nearbyItem2 = new ItemModel
+            {
+                ItemId = 6,
+                ItemTitle = "Hardcore Mountain Bike",
+                ItemDescription = "Specially designed for the hardest trails. Our team of engineers put a lot of effort into making the perfect mountain bike for all the " +
+                    "contions",
+                ItemPrice = 3799.99,
+                ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/51fxFwONaIL.jpg",
+                //ItemImage2 = "",
+            };
+
+            var nearbyItem3 = new ItemModel
+            {
+                ItemId = 7,
+                ItemTitle = "Hardcore Mountain Bike",
+                ItemDescription = "Specially designed for the hardest trails. Our team of engineers put a lot of effort into making the perfect mountain bike for all the " +
+                    "contions",
+                ItemPrice = 3799.99,
+                ItemImage1 = "https://images-na.ssl-images-amazon.com/images/I/51fxFwONaIL.jpg",
+                //ItemImage2 = "",
+            };
+
+
+
+            nearbyItemList.Add(nearbyItem1);
+            nearbyItemList.Add(nearbyItem2);
+            nearbyItemList.Add(nearbyItem3);
+
+            nearbyItem1Image.Source = nearbyItem1.ItemImage1;
+
+
         }
 
         void Handle_ItemClick(object sender, System.EventArgs e) //Navigates to a page with more detail

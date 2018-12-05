@@ -59,8 +59,7 @@
                 Text="P"
                 Grid.Row="0"
                 Grid.Column="2"
-                Clicked="profileButton_Clicked"
-                
+                Clicked="profileButton_Clicked"  
             />
             
         </Grid>
@@ -73,13 +72,22 @@
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-            <Grid.RowDefinitions> 
-                <RowDefinition Height="110" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110"/>
             </Grid.RowDefinitions>
+            
+            <Image
+                x:Name="nearbyItem1Image"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Grid.Row="0"
+                Grid.Column="0"
+                Source="{Binding ItemImage1}"
+            />
             
             <Button
                 x:Name="item1Button"
@@ -87,9 +95,18 @@
                 Clicked="item1Button_Clicked"
                 Grid.Row="0"
                 Grid.Column="0"
-                BackgroundColor="Blue"
-                TextColor="White"
+                BackgroundColor="Transparent"
+                TextColor="Transparent"
              />  
+            
+            <Image
+                x:Name="nearbyItem2Image"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Grid.Row="0"
+                Grid.Column="1"
+                Source="{Binding ItemImage1}"
+            />
             
             <Button
                 x:Name="item2Button"
@@ -97,9 +114,18 @@
                 Clicked="item2Button_Clicked"
                 Grid.Row="0"
                 Grid.Column="1"
-                BackgroundColor="Blue"
-                TextColor="White"
-             />  
+                BackgroundColor="Transparent"
+                TextColor="Transparent"
+             />
+            
+           <Image
+                x:Name="nearbyItem3Image"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Grid.Row="0"
+                Grid.Column="2"
+                Source="{Binding ItemImage1}"
+            />
             
             <Button
                 x:Name="item3Button"
@@ -107,9 +133,9 @@
                 Clicked="item3Button_Clicked"
                 Grid.Row="0"
                 Grid.Column="2"
-                BackgroundColor="Blue"
-                TextColor="White"  
-             />         
+                BackgroundColor="Transparent"
+                TextColor="Transparent"  
+             />  
             
         </Grid>
         
