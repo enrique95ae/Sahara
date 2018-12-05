@@ -30,6 +30,15 @@ namespace Sahara
                 ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg"
             };
 
+            var item2 = new ItemModel
+            {
+                ItemId = 12,
+                ItemTitle = "Snickers",
+                ItemDescription = "Brown bars.",
+                ItemPrice = 0.99,
+                ItemImage1 = "https://www.sweets-online.com/images/produkte/i12/12080-12080-1_1.jpg"
+            };
+
             itemList.Add(item1);
 
             SearchListView.ItemsSource = itemList;
