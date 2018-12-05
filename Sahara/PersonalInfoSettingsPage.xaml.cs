@@ -41,6 +41,21 @@ namespace Sahara
             var infoList = new ObservableCollection<PersonalInfo>();
             info.ForEach(x => infoList.Add(x));
 
+           
+
+            PersonalInfoListView.ItemsSource = infoList;
+        }
+
+        private async void clearButton_Clicked(object sender, EventArgs e)
+        {
+            await App.Database.ClearInfo();
+
+            var info = await App.Database.ClearInfo();
+
+            var infoList = new ObservableCollection<PersonalInfo>();
+            info.ForEach(x => infoList.Add(x));
+            info.Clear();
+
             PersonalInfoListView.ItemsSource = infoList;
         }
 

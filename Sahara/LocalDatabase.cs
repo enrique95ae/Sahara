@@ -17,6 +17,11 @@ namespace Sahara
             database.CreateTableAsync<PersonalInfo>().Wait();
         }
 
+        public Task<List<PersonalInfo>>ClearInfo()
+        {
+            return database.QueryAsync<PersonalInfo>("DELETE FROM [PersonalInfo]");
+        }
+
         public Task<int> SaveBillingAsync(BillingModel bill)
         {
             return database.InsertAsync(bill);

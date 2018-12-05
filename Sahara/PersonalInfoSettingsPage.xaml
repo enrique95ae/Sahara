@@ -39,7 +39,7 @@
          />
         
         <Label
-            Text="Firsrt name:"
+            Text="First name:"
             FontSize="Medium"
             FontAttributes="Bold"
             Grid.Row="3"
@@ -84,6 +84,15 @@
             Grid.Row="7"
             Grid.Column="0"
             Clicked="authButton_Clicked"
+            VerticalOptions="End"
+         />
+        
+        <Button
+            x:Name="clearButton"
+            Text="Clear"
+            Grid.Row="7"
+            Grid.Column="1"
+            Clicked="clearButton_Clicked"
             VerticalOptions="End"
          />
             
