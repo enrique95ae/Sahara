@@ -100,7 +100,7 @@
                 </ListView>
         
                 <Label
-                    Text="Total: "
+                    Text="Total: 4068.76"
                     Grid.Column="0"
                     Grid.Row="3"
                     FontAttributes="Bold"
