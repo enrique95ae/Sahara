@@ -77,4 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Remove="searchPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="SearchResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

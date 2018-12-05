@@ -1,32 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Sahara.searchResultsPage">
 
-        <StackLayout>
-            <Label Text="Search results:" 
+    <ContentPage.Content>
+    </ContentPage.Content>
+
+
+    <StackLayout>
+        <Label Text="Search results:" 
                TextColor="Black"/>
-          
-            <ListView
+
+        <ListView
             x:Name="SearchListView"
             HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Frame Padding="2" Margin="0,3,0,3" HeightRequest="150">
-                                    <Grid Padding="3">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="90"/>
-                                            <RowDefinition Height="60"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Image
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Frame Padding="2" Margin="0,3,0,3" HeightRequest="150">
+                                <Grid Padding="3">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="90"/>
+                                        <RowDefinition Height="60"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image
                                             x:Name="Image"
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="CenterAndExpand"
@@ -37,7 +41,7 @@
                                             MinimumHeightRequest="120"
                                             MinimumWidthRequest="120"
                                             Source="{Binding ItemImage1}"/>
-                                        <Label  
+                                    <Label  
                                             x:Name="Title_Label"
                                             HorizontalOptions="CenterAndExpand"
                                             Grid.Row="0"
@@ -46,7 +50,7 @@
                                             Font="Bold,20"
                                             TextColor="Black"
                                             Text="{Binding ItemTitle}"/>
-                                        <Label
+                                    <Label
                                             x:Name="Price_Label"
                                             TextColor="Black"
                                             HorizontalOptions="CenterAndExpand"
@@ -55,7 +59,7 @@
                                             Grid.Row="1"
                                             Grid.Column="2"
                                             FontSize="16"/>
-                                        <Button
+                                    <Button
                                             x:Name="ClickOnItem"
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="CenterAndExpand"
@@ -64,7 +68,7 @@
                                             Text="Info"
                                             Clicked="Handle_ItemClick"
                                             CommandParameter="{Binding .}" />
-                                        <Button
+                                    <Button
                                             x:Name="ClickOnItem2"
                                             Grid.Row="0"
                                             Grid.Column="0"
@@ -74,12 +78,12 @@
                                             CommandParameter="{Binding .}"
                                             BackgroundColor="Transparent"
                                             TextColor="Transparent"/>
-                                    </Grid>
-                                </Frame>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
