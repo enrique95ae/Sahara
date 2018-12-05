@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Forms;
 
 namespace Sahara
 {
-	public partial class SearchResultsPage : ContentView
-	{
-		public SearchResultsPage()
-		{
-			InitializeComponent();
+    public partial class searchResultsPage : ContentPage
+    {
+        public searchResultsPage()
+        {
+            InitializeComponent();
             PopulateSearchResultsView();
-		}
+        }
 
         private async void item1Button_Clicked(object sender, EventArgs e)
         {

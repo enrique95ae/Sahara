@@ -26,7 +26,8 @@
         <Grid HorizontalOptions="StartAndExpand" Padding="3" ColumnSpacing="0.1">
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
@@ -48,8 +49,17 @@
                 x:Name="shoppingCartButton"
                 Text="SC"
                 Grid.Row="0"
-                Grid.Column="1"
+                Grid.Column="2"
                 Clicked="shoppingCartButton_Clicked" 
+                
+            />
+            
+           <Button 
+                x:Name="searchButton"
+                Text="Search"
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="searchButton_Clicked" 
                 
             />
             
@@ -58,7 +68,7 @@
                 x:Name="profileButton"
                 Text="P"
                 Grid.Row="0"
-                Grid.Column="2"
+                Grid.Column="3"
                 Clicked="profileButton_Clicked"  
             />
             

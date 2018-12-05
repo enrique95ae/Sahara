@@ -44,7 +44,7 @@ namespace Sahara
         }
 
         /*RETRIEVE ITEM DATA FROM SERVER HERE */
-        
+
 
         //private void populateMainPage(){
 
@@ -52,7 +52,7 @@ namespace Sahara
 
         //    var getItemDataEvent = new GetItemDataEvent();
 
-           
+
 
         //    //For loop to get: FIRST 3 ITEMS = NEARBY ITEMS
         ////    for (int count = 0; count < 3; count++)
@@ -80,7 +80,7 @@ namespace Sahara
         ////        itemList.Add(item);
 
         ////    }
-            
+
         //}
 
 
@@ -109,6 +109,12 @@ namespace Sahara
         {
             await Navigation.PushAsync(new ItemPage());
         }
+
+        private async void searchButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new searchResultsPage());
+        }
+
         private void PopulateItemListView() //the product list that everything else pulls from, will be received from server
         {
             var itemList = new ObservableCollection<ItemModel>(); //filled with placeholder items
@@ -167,7 +173,7 @@ namespace Sahara
                 ItemImage6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7djWmU-BclsZTmpCPQ9hGm8LupBmSzD5K7fFtUJvzSv1wfxK8",
             };
 
-            
+
 
             var item5 = new ItemModel
             {
@@ -306,6 +312,14 @@ namespace Sahara
                 ItemImage6 = "https://i.ebayimg.com/images/g/~AcAAOSwq1JZJb1M/s-l300.jpg",
             };
 
+            var menuItem = (Button)sender;
+            var item = (ItemModel)menuItem.CommandParameter;
+            Navigation.PushAsync(new ItemPage(nearbyItem1));
+        }
+
+        void Handle_NearbyItem2Click(object sender, System.EventArgs e) //Navigates to a page with more detail
+        {
+
             var nearbyItem2 = new ItemModel
             {
                 ItemId = 6,
@@ -323,7 +337,7 @@ namespace Sahara
 
             var menuItem = (Button)sender;
             var item = (ItemModel)menuItem.CommandParameter;
-            Navigation.PushAsync(new ItemPage(nearbyItem1));
+            Navigation.PushAsync(new ItemPage(nearbyItem2));
         }
 
     }
