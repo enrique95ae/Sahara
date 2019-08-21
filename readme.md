@@ -6,6 +6,12 @@ This project is being developed using Xamarin Forms.
 
 Mobile shopping application for both iOS and Android. Client, TCP Server and Database created from scratch and connected to each other. 
 
+This code has a great amount of errors, redundancies and unefficient functions. The scope of the project was to broad and the deadline too tight so we could not spend too much time making it more efficient. 
+
+Additionally, only one of the functionalities (create account) is properly coded on both ends (client and server). For demonstration purposes and due to the time constraints we hardcoded some of the other network features. 
+
+The main goal of the project was not having a complete functioning app but learning designing, version control and team development methods. 
+
 </br></br>
 
 TCP Server (C#) Repo: https://github.com/enrique95ae/SaharaServer
